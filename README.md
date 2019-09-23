@@ -1,2 +1,2 @@
 # BilliardHub
-An online platform dedicated for holding snooker competitions
+An online platform dedicated for holding billiard competitions.

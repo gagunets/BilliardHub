@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Players_list</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/css/players_list_style.css"> 
+	<script>
+		function myFunction() {
+		  var input, filter, ul, li, a, i, txtValue;
+		  input = document.getElementById('myInput');
+		  filter = input.value.toUpperCase();
+		  ul = document.getElementById("myUL");
+		  li = ul.getElementsByTagName('li');
+
+		  for (i = 0; i < li.length; i++) {
+		    a = li[i].getElementsByTagName("a")[0];
+		    txtValue = a.textContent || a.innerText;
+		    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		      li[i].style.display = "";
+		    } else {
+		      li[i].style.display = "none";
+		    }
+		  }
+		}
+	</script>
+</head>
+	<body>
+		<header>
+				<img class="players_list_header_icon" alt="trophy_image" width="20" height="20" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/web/user.png"> 
+				<h1 class="players_list_header">Гравці</h1>
+		</header>
+
+		<section>
+			<div class="players_list_search_field">
+				<form action="#">
+			      <input id="myInput" onkeyup="myFunction()" type="text" placeholder="Пошук.." name="search">
+			      <button type="submit">
+			      	<img src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/search.png" alt="Шукати" width="20" height="20">
+			      </button>
+			    </form>
+		    </div>
+			<div class="players_list_box">
+				<div class="players_list_box_letter">
+					<span>A</span>
+				</div>
+				<ul class="players_u-list_item" id="myUL">
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/lev.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Лев Копчений
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/hr.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Рамштайн Колумбійський
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/dan02.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Селюк Стесаний
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/dan.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Салера Рублена
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+			    </ul>
+			</div>
+
+			<div class="players_list_box">
+				<div class="players_list_box_letter">
+					<span>Б</span>
+				</div>
+				<ul class="players_u-list_item" id="myUL">
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/lev.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Лев Копчений
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/hr.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Рамштайн Колумбійський
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/dan02.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Селюк Стесаний
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/dan.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Салера Рублена
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/dan02.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Салера Рублена
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<div class="players_list_item_box">
+							<figure>
+								<img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/dan02.jpg">
+							</figure>
+							<div class="players_list_item_details">
+									<h4 class="players_list_item_name">
+										Салера Рублена
+									</h4>
+									<p class="players_list_item_location">
+										Львів, Україна
+									</p>
+							</div>
+						</div>
+						</a>
+					</li>
+			    </ul>
+			</div>
+		</section>
+	</body>
+</html>

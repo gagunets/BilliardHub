@@ -1,0 +1,162 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #222629;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+section {
+    text-align: center;
+}
+.match_lobby {
+	display: inline-block;
+	max-width: 700px;
+	min-width: 700px;
+	margin-top: 40px;   /*  відступ зверху  */
+	background-color: #474B4F;
+	border-top: 3px solid #61892F;
+}
+.match_lobby_info {
+	padding: 12px;
+	margin: 0;
+	background-color: #222629;
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 12px;
+}
+.match_lobby_frame-section tbody {
+	display: table-row-group;
+}
+.match_lobby_player-table {
+	display: inline-block;
+    padding-top: 20px;
+}
+.match_lobby_player01,
+.match_lobby_player02 {
+	padding: 10px 40px;
+	float: left;
+	position: relative;
+	display: block;
+	box-sizing: border-box;	
+}
+.match_lobby_frame-section {
+	float: left;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	padding: 0px 20px;
+	margin-top: 60px;
+}
+.match_lobby_player01-name,
+.match_lobby_player02-name {
+	color: white;
+	font-size: 15px;
+
+}
+.match_lobby_player01-img,
+.match_lobby_player02-img {
+	max-width: 120px;
+	height: auto;
+}
+.match_lobby_frame-section tr th {
+	font-size: 17px;
+	font-weight: 300;
+	background-color: #222629;
+	color: #6B6E70;
+	text-align: center;
+	padding: 0px 20px;
+	text-transform: uppercase;
+}
+.match_lobby_frame-section tr td {
+	font-size: 40px;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	padding: 0px 30px;
+	vertical-align: middle;
+}
+.match_lobby_frame-section table tr.match_lobby_frame-details td {
+	font-size: 12px;
+	background-color: #474B4F;
+	color: #fff;
+	text-align: center;
+	border: solid 1px #222629;
+	border-bottom: solid 5px #474B4F;
+	padding: 3px 0;
+	vertical-align: middle;
+	border-top: solid 1px #222629;
+}
+
+
+/*********** TABLE ***********/
+
+.match_lobby_framesBreaksPoits_table {
+	display: inline-block;
+	color: #fff;
+	max-width: 700px;
+	min-width: 700px;
+	margin-top: -19px;
+}
+.match_lobby_table {
+	margin-bottom: 30px;
+	max-width: 700px;
+	min-width: 700px;
+}
+.match_lobby_table thead th {
+	text-transform: uppercase;
+	padding: 15px;
+	border-top: 3px solid #61892F;
+	font-size: 12px;
+}
+.match_lobby_table .match_lobby_table_tbody tr td {
+	padding: 20px;
+	border-right: 1px solid #5F6163;
+}
+.match_lobby_table_date_right {
+	text-align: center;
+	font-size: 17px;
+	vertical-align: middle;
+	color: #A5EF3E;
+}
+.match_lobby_table_date_center {
+	text-align: center;
+	font-size: 17px;
+	vertical-align: middle;
+}
+.match_lobby_table_date_left {
+	text-align: center;
+	font-size: 17px;
+	vertical-align: middle;
+}
+.match_lobby_table_tbody_odd {
+	background-color: #54595E;
+}
+.match_lobby_table_tbody_even {
+	background-color: #474B4F;
+}
+.match_lobby_table_number_even {
+	background-color: #547728;
+	font-weight: bold;
+	max-width: 20px;
+}
+.match_lobby_table_number_odd {
+	background-color: #61892F;
+	font-weight: bold;
+	max-width: 20px;
+}
+.match_lobby_table tr>:nth-child(3) {
+	max-width: 20px;
+}
+.match_lobby_table tbody td>:nth-child(4) {
+	border-right: none;
+}
+.match_lobby_table_pointer {
+	cursor: pointer;
+}

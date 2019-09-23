@@ -1,0 +1,116 @@
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	background-color: #222629;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.container {
+	color: #fff;
+    text-align: center;
+    margin: 50px auto;
+    width: 960px;
+}
+.month_container {
+	display: inline-block;
+}
+.header_icon {
+	float: left;
+	margin-top: 3px;
+}
+.tournament_list_table_header {
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	padding: 0px 0px 20px 5px;
+	display: flex;
+}
+.tournament_list_table_month {
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: left;
+	font-weight: 100;
+}
+table {
+	border-collapse: collapse;
+	display: table;
+	border-spacing: 0;
+}
+table col[class*="col-"] {
+	position: static;
+	float: none;
+	display: table-column;
+}
+.tournament_list_table{
+	margin-bottom: 30px;
+}
+table.tournament_list_table .col-1 {
+ 	width: 40px;
+}
+table.tournament_list_table .col-2 {
+ 	width: 350px;
+ 	margin: 0px 20px;
+}
+table.tournament_list_table .col-3 {
+ 	width: 300px;
+}
+table.tournament_list_table .col-4 {
+ 	width: 300px;
+}
+.tournament_list_table thead th {
+	text-transform: uppercase;
+	padding: 15px;
+	border-top: 3px solid #61892F;
+	font-size: 12px;
+}
+.tournament_list_table tbody tr td {
+	padding: 20px;
+	border-right: 1px solid #5F6163;
+}
+.tournament_list_table_date_right {
+	text-align: center;
+	font-size: 17px;
+	vertical-align: middle;
+	color: #A5EF3E;
+}
+.tournament_list_table_date_center {
+	text-align: center;
+	font-size: 17px;
+	vertical-align: middle;
+}
+.tournament_list_table_date_left {
+	text-align: center;
+	font-size: 17px;
+	vertical-align: middle;
+}
+.tournament_list_table_tbody_odd {
+	background-color: #54595E;
+}
+.tournament_list_table_tbody_even {
+	background-color: #474B4F;
+}
+.tournament_list_table_number_even {
+	background-color: #547728;
+	font-weight: bold;
+}
+.tournament_list_table_number_odd {
+	background-color: #61892F;
+	font-weight: bold;
+}
+.tournament_list_table_pointer {
+	cursor: pointer;
+}
+/*.tournament_name_overflow_hidden {
+ 	overflow-x: hidden;
+	margin: 0 auto;
+	text-align: left;
+}*/
+.thead_icon {
+	margin-right: 3px;
+}

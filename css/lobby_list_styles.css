@@ -1,0 +1,101 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #222629;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container {
+    text-align: center;
+}
+.live-match-lobby {
+	display: inline-block;
+}
+.live-match-lobby-table {
+	display: inline-block;
+	max-width: 50%;
+	margin-top: 40px;   /*  відступ зверху  */
+}
+.live-match-lobby-info {
+	padding: 12px;
+	margin-bottom: 0;
+	background-color: #222629;
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 12px;
+	border-top: 3px solid #61892F;
+}
+.live-match-lobby-frame-section tbody {
+	display: table-row-group;
+}
+.live-match-lobby-player-table {
+	display: inline-block;
+	background-color: #474B4F;
+    border-bottom: 3px solid #61892F;
+    padding-top: 20px;
+}
+.live-match-lobby-player01,
+.live-match-lobby-player02 {
+	padding: 10px 40px;
+	float: left;
+	position: relative;
+	display: block;
+	box-sizing: border-box;	
+}
+.live-match-lobby-frame-section {
+	float: left;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+}
+.live-match-lobby-player01-name,
+.live-match-lobby-player02-name {
+	color: white;
+	font-size: 15px;
+
+}
+.live-match-lobby-player01-img,
+.live-match-lobby-player02-img {
+	max-width: 100px;
+	height: auto;
+}
+.live-match-lobby-frame-section tr th {
+	font-size: 11px;
+	font-weight: 300;
+	background-color: #222629;
+	color: #6B6E70;
+	text-align: center;
+	padding: 1px 20px;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+.live-match-lobby-frame-section tr td {
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+.live-match-lobby-frame-section {
+	padding: 0px 20px;
+	margin-top: 20px;
+}
+.live-match-lobby-frame-section table tr.live-match-lobby-frame-details td {
+	font-size: 10px;
+	background-color: #474B4F;
+	color: #fff;
+	text-align: center;
+	border: solid 1px #222629;
+	border-bottom: solid 5px #474B4F;
+	padding: 3px 0;
+	vertical-align: middle;
+	border-top: solid 1px #222629;
+}

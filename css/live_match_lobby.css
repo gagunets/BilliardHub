@@ -1,0 +1,159 @@
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	background-color: #014027;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container {
+    text-align: center;
+}
+.live-match-lobby {
+	display: inline-block;
+	margin: 20px;
+	width: 78%;
+}
+.live-match-lobby-table {
+	display: inline-block;
+}
+.live-match-lobby img {
+	float: left;
+	display: inline-block;
+}
+.live-match-lobby-club-name {
+	float: left;
+	display: inline-block;
+	padding: 20px 0px 0px 30px;
+	color: white;
+}
+.live-match-lobby-table-num {
+	float: right;
+	color: white;
+	padding-top: 20px;
+}
+.live-match-lobby-info {
+	padding: 20px;
+	margin-top: 0;
+	background-color: #00603b;
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 15px;
+}
+.live-match-lobby-frame-section tbody {
+	display: table-row-group;
+}
+.live-match-lobby-player-table {
+	display: inline-block;
+	background-color: #00603b;
+	box-shadow: 0px 10px 10px #0C3626;
+}
+.live-match-lobby-player01 {
+	padding: 20px 50px;
+	float: left;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+
+	/* PLAYER HIGHLIGHT */
+	
+}
+.live-match-lobby-frame-section {
+	float: left;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+}
+.live-match-lobby-player02 {
+	padding: 20px 50px;
+}
+/* PLAYER HIGHLIGHT */
+.highlight {
+	float: left;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid #3BDD9F;
+	box-shadow: 0px 15px 10px #0C3626;
+	background-color: #007C4D;
+}
+.live-match-lobby-player01-name,
+.live-match-lobby-player02-name {
+	color: white;
+	font-size: 20px;
+}
+.live-match-lobby-player01-surname,
+.live-match-lobby-player02-surname {
+	color: white;
+	font-size: 23px;
+	text-transform: uppercase;
+}
+.live-match-lobby-player01-img,
+.live-match-lobby-player02-img {
+	max-width: 200px;
+	height: auto;
+}
+.live-match-lobby-frame-section tr th {
+	font-size: 15px;
+	font-weight: 300;
+	background-color: #014027;
+	color: #669f89;
+	text-align: center;
+	padding: 10px 30px;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+.live-match-lobby-frame-section tr td {
+	font-size: 35px;
+	font-weight: 500;
+	color: #e5efeb;
+	text-align: center;
+	padding: 5px 20px;
+	vertical-align: middle;
+}
+.live-match-lobby-frame-section {
+	padding: 0px 60px;
+	margin-top: 70px;
+}
+.live-match-lobby-frame-section table tr.live-match-lobby-frame-details td {
+	font-size: 12px;
+	background-color: #00603b;
+	color: #7faf9d;
+	text-align: center;
+	border: solid 1px #014027;
+	border-bottom: solid 10px #00603b;
+	padding: 5px 0;
+	vertical-align: middle;
+	border-top: solid 1px #014027;
+}
+
+/* INPUT */
+
+.live-match-lobby-enter-points {
+	margin: 40px 0px;
+	background-color: #014027;
+}
+.live-match-lobby-enter-points-text {
+	color: #fff;
+	font-size: 19px;
+}
+.live-match-lobby-enter-points-input-area {
+	background-color: #014027;
+	border-style: none;
+	outline: none;
+	font-size: 35px;
+	text-align: center;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	width: 90px;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+

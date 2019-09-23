@@ -1,0 +1,221 @@
+ body {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.container {
+	margin: 0 auto;
+	display:block;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+div {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+.logologin {
+	background-color: #232b2b;
+	width: 100%;
+	top: 0;
+}
+.logologin img {
+	width: 55px;
+	height: 36px;
+	display: block;
+	background-color: #4caf50;
+	float: left;
+	padding: 10px;
+	padding-top: 10px;
+}
+.login {
+	padding: 10px 0px;
+	margin-top: 2px;
+	float: right;
+}
+.login input[type="text"],
+.login input[type="password"] {
+	background-color: #3b444b;
+	border: 0px;
+	padding: 4px 0px 4px 6px;
+	margin: 2px 2px;
+	outline: none;
+}
+.login input[type="submit"] {
+	border: 0px;	
+	margin-right: 35px;
+	padding: 4px 10px;
+	background-color: #4caf50;
+	color: white;
+	outline: none;
+}
+.login input[type="submit"]:hover {
+	background-color: #2d6b30;
+}
+.navigation {
+	box-sizing: border-box;
+}
+.navigation  ul {
+	margin: 0px;
+}
+.navigation ul li {
+	list-style: none;
+	float: left;
+}
+.navigation a {
+	box-sizing: border-box;
+	font-size: 90%;
+	display: block;
+	padding: 20px 45px 20px 45px;
+	color: white;
+	background-color: #232b2b;
+	text-transform: uppercase;
+	text-align: center;
+}
+.navigation li a:hover {
+	background-color: #3d4747;
+}
+
+/* Bracket styles*/
+
+#bracket {
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-top: 50px;
+	overflow: hidden;
+	background-color: #fff;
+	padding-top: 20px;
+	font-size: 12px;
+	padding: 40px 0;
+}
+.split {
+	display: block;
+	float: left;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 42%;
+	-webkit-flex-direction:row;
+	-moz-flex-direction:row;
+	flex-direction:row;
+}
+.champion {
+	float:left;
+	display:block;
+	width: 16%;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	-webkit-align-self:center;
+	align-self:center;
+	text-align: center;
+	margin-top: -7%;
+	padding: 20% 0%;
+	margin-left: 10%;
+} 
+.round {
+	display:block;
+	float:left;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	width: 95%;
+}
+.split-two {}
+.split-one .round {margin: 0 2.5% 0 0;}
+.split-two .round {margin: 0 0 0 2.5%;}
+.matchup {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	height: 70px;
+}
+.score {
+	font-size: 11px;
+	text-transform: uppercase;
+	float: right;
+	color: #2C7399;
+	font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	right: 5px;
+}
+.team {
+	padding: 0 5px;
+	margin: 3px 0;
+	height: 25px; 
+	line-height: 25px;
+	white-space: nowrap; 
+	overflow: hidden;
+	position: relative;
+	color: #000;
+}
+.team-top {
+	margin-top: 0px;
+}
+.round-two .matchup {
+	margin: 0%; 
+	margin-left: 20%;
+	height: 5%;
+	padding: 49% 0%;
+}
+.round-three .matchup {
+	margin:0%; 
+	margin-left: 40%;
+	height: 8%; 
+	padding: 106% 0%;
+}
+.round-details {
+	font-family: 'Roboto Condensed', sans-serif; 
+	font-size: 13px; 
+	color: #2C7399;
+	text-transform: uppercase;
+	text-align: center;
+	height: 40px;
+}
+.champion li, .round li {
+	background-color: #e1e1e1;
+	box-shadow: none; 
+	opacity: 0.45;
+}
+.current li.team {
+	background-color: #e1e1e1;
+	opacity: 1;
+}
+.youtube-logo{
+	margin: 0;
+	display: block;
+	flex-direction: row;
+	padding-left: 120px;
+}
+.youtube-logo img {
+	height: 17px;
+	width: 17px;
+}
+.match-number {
+	font-size: 11px;
+	float: left;
+	width: 20px;
+	padding: 4px;
+	background-color: #2C7399;
+	color: #fff;
+	text-align: center;
+}

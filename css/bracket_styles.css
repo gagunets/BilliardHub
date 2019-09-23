@@ -1,0 +1,108 @@
+body {
+  background-color: #222629;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+section {
+  overflow: hidden;
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 20px 0;
+}
+.brackets {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.youtube-logo{
+  display: block;
+  position: absolute;
+  float: left;
+}
+.youtube-logo img {
+  height: 20px;
+  width: 20px;
+}
+.split {
+  display: block;
+  position: absolute;
+  float: left;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 16%;
+  margin-top: 23px;
+ -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row; 
+}
+
+
+
+.match-number {
+  display: block;
+  position: static;
+  width: 13px;
+  padding: 5px;
+  background-color: #61892F;
+  color: #fff;
+  text-align: center;
+}
+.brackets_match_table {
+  width: 150px;
+  color: white;
+  border-collapse: collapse;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.pre_numbers01 {
+  text-align: right;
+  position: absolute;
+  left: -20px;
+  top: 32px;
+}
+.pre_numbers02 {
+  text-align: right;
+  position: absolute;
+  left: -20px;
+  top: 60px;
+}
+.brackets_match_table tbody td {
+  font-size: 13px;
+  background-color: #474B4F;
+  padding: 6px;
+}
+.brackets_match_table tbody tr td:nth-child(2) {
+  border-left: 1px solid #6B6E70;
+  text-align: center;
+}
+.brackets_match_table tfoot {
+  font-size: 11px;
+}
+.brackets_match_table tbody tr:first-child {
+  border-bottom: 1px solid #6B6E70;
+}
+.fa-youtube {
+  position: absolute;
+  top: 6px;
+  padding-left: 7px;
+  font-size: 14px;
+  color: #ff0000;
+}
+.player_name {
+  overflow: hidden;
+  max-width: 140px;
+  max-height: 15px;
+}

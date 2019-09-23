@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>live_match_lobby</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/css/live_match_lobby.css"> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function() { 
+			$('html').keydown(function(event) {
+			switch(event.which) {
+			    case 37:  // <-
+			      alert('left arrow pressed');
+			      break;
+			      case 39: // ->
+			      alert('right arrow pressed');
+			      break;
+			      case 13: // entter
+			      alert('enter pressed');
+			      break;
+			    }
+			});
+		});
+	</script>
+</head>
+	<body>
+		
+		<div class="container">
+			<div class="live-match-lobby">
+				<img alt="logo" height="100px" width="100px" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/brain.png">
+				<h2 class="live-match-lobby-club-name">Club name</h2>
+				<h3 class="live-match-lobby-table-num">Стіл #12</h3>
+			</div>
+			<div class="live-match-lobby-table">
+				<h3 class="live-match-lobby-info">Раунд 1 - Зустріч 1</h3>
+				<div class="live-match-lobby-player-table">
+					<div class="live-match-lobby-player01 highlight">
+						<span class="live-match-lobby-player01-name">Лев</span>
+						<span class="live-match-lobby-player01-surname">Хрущ</span>
+						<p>
+							<img class="live-match-lobby-player01-img" alt="Lev Hrushch image" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/lev.jpg">
+						</p>
+					</div>
+					<div class="live-match-lobby-frame-section">
+						<table class="live-match-lobby-frame-table">
+							<tbody>
+								<tr>
+									<td>3</td>
+									<th>Frames</th>
+									<td>3</td>
+								</tr>
+								<tr class="live-match-lobby-frame-details">
+									<td colspan="3">Best of 7</td>
+								</tr>
+								<tr>
+									<td>48</td>
+									<th>Points</th>
+									<td>89</td>
+								</tr>
+								<tr class="live-match-lobby-frame-details">
+									<td colspan="3">107 points left</td>
+								</tr>
+								<tr>
+									<td>39</td>
+									<th>Break</th>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="live-match-lobby-enter-points">
+							 <form>
+							    <div class="live-match-lobby-enter-points-input">
+							    	<label class="live-match-lobby-enter-points-text">Введіть очки:</label>
+							      	<input class="live-match-lobby-enter-points-input-area" type="number" required>
+							    </div>   
+							  </form>
+						</div>
+					</div>
+					<div class="live-match-lobby-player02 highlight">
+						<span class="live-match-lobby-player02-name">Данило</span>
+						<span class="live-match-lobby-player02-surname">Мило</span>
+						<p>
+							<img class="live-match-lobby-player02-img" alt="Danylo Mylo image" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/dan02.jpg">
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</htmlv

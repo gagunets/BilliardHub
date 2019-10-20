@@ -1,0 +1,119 @@
+body {
+  font-family: 'Exo 2', sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #222629;
+  color: white;
+}
+/*BRACKETS*/
+section {
+	display: flex;
+  flex-direction: row; 
+  list-style-type: none;
+	justify-content: center;
+}
+
+
+/*.bracket_columns {
+  display: flex;
+  flex-direction: row; 
+  list-style-type: none;
+	justify-content: center;
+}*/
+.bracket {
+	display: flex;
+  flex-direction: column; 
+  list-style-type: none;
+  margin: 20px;
+}
+.bracket_column_02 {
+	margin-top: 60px;
+}
+
+/******** A BRACKET ITSELF *********/
+
+.bracket_item {
+	width: 200px; 
+  display: grid;
+  grid-template-columns: 10% 13% auto 15%;
+  grid-template-rows: 25px 30px 30px 30px;
+}
+.num {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #61892F;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+  font-size: 14px;
+  border-radius: 3px 3px 0px 0px;
+}
+.youtube {
+  grid-column: 4;
+  grid-row: 1;
+  padding-top: 4px;
+  color: #ff0000;
+  text-align: center;
+}
+.front_01 {
+  grid-column: 1;
+  grid-row: 2;
+  padding-top: 9px;
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+}
+.front_02 {
+  grid-column: 1;
+  grid-row: 3;
+  padding-top: 9px;
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+}
+.name_01 {
+  grid-column: 2/4;
+  grid-row: 2;
+  padding-top: 7px;
+  padding-left: 7px;
+  font-size: 12px;
+  background-color: #474B4F;
+  border-bottom: solid 1px grey;
+}
+.name_02 {
+  grid-column: 2/4;
+  grid-row: 3;
+  padding-top: 7px;
+  padding-left: 7px;
+  font-size: 12px;
+  background-color: #474B4F;
+  border-radius: 0px 0px 0px 3px;
+}
+.points_01 {
+  grid-column: 4;
+  grid-row: 2;
+  padding-top: 7px;
+  text-align: center;
+  background-color: #474B4F;
+  border-bottom: solid 1px grey;
+  border-left: solid 1px grey;
+  font-size: 14px;
+  border-radius: 0px 3px 0px 0px;
+}
+.points_02 {
+  grid-column: 4;
+  grid-row: 3;
+  padding-top: 7px;
+  text-align: center;
+  background-color: #474B4F;
+  border-left: solid 1px grey;
+  font-size: 14px;
+  border-radius: 0px 0px 3px 0px;
+}
+.looser {
+  grid-column: 2/4;
+  grid-row: 4;
+  font-size: 11px;
+  font-style: italic;
+  padding-top: 3px;
+}

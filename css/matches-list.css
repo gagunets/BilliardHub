@@ -1,0 +1,117 @@
+.matches_list_table_round_num {
+	text-transform: uppercase;
+	font-size: 22px;
+	text-align: left;
+}
+.round_num_div {
+	width: 1067px;
+	max-width: 1067px;
+}
+table col[class*="col-"] {
+	position: static;
+	float: none;
+	display: table-column;
+}
+.matches_list_table{
+	margin-bottom: 50px;
+	width: 1067px;
+	max-width: 1067px;
+	min-width: 1067px;
+}
+table.matches_list_table .col-1 {
+ 	width: 5%;
+}
+table.matches_list_table .col-2 {
+ 	width: 30%;
+}
+table.matches_list_table .col-3 {
+ 	width: 30%;
+}
+table.matches_list_table .col-4 {
+ 	width: 30%;
+}
+table.matches_list_table .col-5 {
+ 	width: 5%;
+}
+table.matches_list_table .col-6 {
+ 	width: 5%;
+}
+.matches_list_table_score {
+	text-align: center;
+}
+.matches_list_table_score_row {
+	display: inline-block;
+}
+.matches_list_table thead th {
+	text-transform: uppercase;
+	padding: 15px;
+	font-size: 13px;
+	text-align: center;
+}
+.matches_list_table_thead{
+	color: #fff;
+}
+.matches_list_table tbody tr td {
+	padding: 7px;
+}
+.matches_list_table_name_right {
+	text-align: right;
+	font-size: 15px;
+	vertical-align: middle;
+}
+.matches_list_table_score01,
+.matches_list_table_score02 {
+	font-size: 20px;
+	font-weight: 700;
+}
+.matches_list_table_best_of {
+	padding: 2px 10px;
+	font-weight: normal;
+	font-size: 14px;
+}
+.matches_list_table_name_left {
+	text-align: left;
+	font-size: 15px;
+	vertical-align: middle;
+}
+.matches_list_table_tbody_odd {
+	background-color: #54595E;
+}
+.matches_list_table_tbody_even {
+	background-color: #474B4F;
+}
+.matches_list_table_number {
+	background-color: #61892F;
+	font-weight: bold;
+}
+.odd_num {
+	background-color: #567A2B; 
+}
+.matches_list_table_pointer {
+	cursor: pointer;
+}
+.fa-youtube {
+	color: #FF1F1C;
+}
+.matches_list_table_youtube {
+	background-color: #4B5055;
+}
+.even_youtube {
+	background-color: #43464A;
+}
+.matches_list_table thead tr>:nth-child(2) {
+	text-align: right;
+}
+.matches_list_table thead tr>:nth-child(4) {
+	text-align: left;
+}
+.matches_list_table_borRad_div {
+	border-top: 3px solid #61892F;
+	border-radius: 3px;
+}
+.matches_list_table_borRad-bl {
+	border-bottom-left-radius: 3px;
+}
+.matches_list_table_borRad-br {
+	border-bottom-right-radius: 3px;
+}

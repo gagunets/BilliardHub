@@ -1,60 +1,106 @@
-body {
-	font-family: 'Open Sans', Arial, sans-serif;
-	background-color: #222629;
-}
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
- 	box-sizing: border-box;
-}
-a {
-	text-decoration: none;
-	color: #fff;
-}
-.container {
-    text-align: center;
-    margin-top: 100px;
-}
 .group {
 	display: inline-block;
+    width: 1067px;
+    max-width: 1067px;
+    height: 306px;
+    max-height: 306px;
+    margin-bottom: 150px;
 }
+
 table {
- 	border-collapse: collapse;
- 	color: #fff;
+    width: 1067px;
+    table-layout: fixed;
 }
-.group-table tbody {
-	border-style: hidden;
+table td {
+    overflow: hidden;
 }
-.group-number {
-	position: absolute;
-	color: #fff;
+.round_num_div {
+    width: 1067px;
+    max-width: 1067px;
+}
+.matches_list_table_round_num {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: left;
+}
+.group-table thead th {
+    padding: 15px;
+    border-right: 1px solid #343A3F;
 }
 .group-table tr>* {
-	border: 1px solid #6B6E70;
-	padding: 20px;
+    padding: 20px;
+    font-size: 15px;
 }
 .group-table {
-	background-color: #474B4F;
-	margin-top: 50px;
+    background-color: #474B4F;
+    width: 1067px;
+    max-width: 1067px;
+    min-width: 1067px;
+    border-radius: 3px;
 }
 .group-table th {
-	border: none;
-	border-top: 3px solid #61892F;
-	background-color: #222629;
- 	color: white;
- 	text-align: center;
+    background-color: #222629;
+    color: white;
+    text-align: center;
+}
+.group-table tbody tr {
+    font-size: 15px;
 }
 .group-table tbody tr>:nth-child(1) {
-	background-color: #61892F; 
-	color: #fff;
-	font-size: 17px;
+    
+    color: #fff;
+    font-size: 17px;
+    border-bottom: none;
  }
  .group-table tbody tr>:last-child {
-	border-right: none;
+    border-right: none;
  }
 .group-table tr>:nth-child(2) {
-	width: 250px; 
+    width: 250px;
  }
- .lastname-uppercase {
+.lastname-uppercase {
  	text-transform: uppercase;
  }
+
+
+/* BORDERS */
+
+.group-table tbody tr td {
+    border-right: 1px solid #71787F;
+}
+.group-table tbody tr>:nth-child(1) {
+    border-right: none;
+}
+.group-table tr>:nth-child(14) {
+    border-right: none;
+}
+
+
+/* COLOR */
+
+.group_even_num {
+    background-color: #61892F;
+}
+.group_odd_num {
+    background-color: #567A2B; 
+}
+.group_row_odd {
+    background-color: #54595E;
+}
+.group_row_even {
+    background-color: #474B4F;
+}
+
+/* RADIUS */
+
+
+.group_border_radius {
+    border-top: 3px solid #61892F;
+    border-radius: 4px;
+}
+.matches_list_table_borRad-br {
+    border-bottom-right-radius: 4px;
+}
+.matches_list_table_borRad-bl {
+    border-bottom-left-radius: 4px;
+}

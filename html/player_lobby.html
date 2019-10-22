@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player lobby</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/~levko/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Downloads/player's_lobby/navigation.css">
+    <link rel="stylesheet" type="text/css" href="/~levko/css/bracket.css">
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Downloads/player's_lobby/styles.css"> 
+    <link rel="stylesheet" type="text/css" href="/~levko/css/group.css"> 
+    <link rel="stylesheet" type="text/css" href="/~levko/css/matches-list.css"> 
+    <link rel="stylesheet" type="text/css" href="/~levko/css/lobby_list_styles.css"> 
+    <link rel="stylesheet" type="text/css" href="/~levko/css/match_lobby_style.css"> 
+    <link rel="stylesheet" type="text/css" href="/~levko/css/tournament_list_style.css"> 
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Downloads/player's_lobby/player_profile_style.css"> 
+    <link rel="stylesheet" type="text/css" href="/~levko/css/players_list_style.css"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/~levko/img/balls01.png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+     <header>
+        <div class="container">
+            <div class="logologin clearfix">
+                <img src="/~levko/img/balls01.png" alt="SnookerLviv">
+                <form action="/~levko/logout.php" class="login" method="post">
+                    <input type="submit" value="Logout">
+                </form>
+                <form action="/~levko/playerHome.php" class="login" method="post">
+                    <input type="submit" value="Home">
+                </form>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="/~levko/admin/tournaments">Tournaments</a></li>
+                        <li><a href="/~levko/admin/players">Players</a></li>
+                        <li><a href="/~levko/admin/clubs">Clubs</a></li>
+                        <li><a href="/~levko/admin/leagues">Leagues</a></li>
+                        <li><a href="/~levko/admin/rankings">Rankings</a></li>
+                        <li><a href="/~levko/admin/matches">Matches</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+
+	<div class="container">
+
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<section>
+		<div class="player_profile_section01">
+			<div class="player_profile_photo">
+					<img class="player_profile_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan02.jpg" alt="Фото гравця">
+			</div>
+			<div class="player_profile_personalInfo">
+				<table>
+					<th colspan="2">
+						<div class="player_profile_playerName">
+							<i class="fas fa-user"></i>
+							<div class="player_profile_header">Levko <span class="player_profile_surname"> Del</span>
+							</div>
+						</div>
+						
+					</th>
+					<tr>
+						<td>
+							<div class="player_profile_country">
+								<div class="player_profile_tableHeader">країна</div>
+								<div class="player_profile_tabelMean">Україна</div>
+							</div>
+						</td>
+						<td>
+							<div class="player_profile_city">
+								<div class="player_profile_tableHeader">місто</div>
+								<div class="player_profile_tabelMean">Львів</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="player_profile_age">
+								<div class="player_profile_tableHeader">дата народження</div>
+								<div class="player_profile_tabelMean">14.08.1997</div>
+							</div>
+						</td>
+						<td>
+							<div class="player_profile_maxBreak">
+								<div class="player_profile_tableHeader">найвищий турнірний<br>брейк</div>
+								<div class="player_profile_tabelMean max_break">128</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div> <br>
+
+			<!-- SECTION 02 (CIRCLES) -->
+
+		<div class="player_profile_section02">
+			<a class="circle_hover" href="#">
+			<div class="player_profile_tournamentCircle player_profile_circle">
+				<div class="little_circle">37</div>
+				<i class="fas fa-trophy"></i>
+			</div>
+			</a>
+			<a class="circle_hover" href="#">
+			<div class="player_profile_tournamentBreakCircle player_profile_circle">
+				<div class="little_circle">19</div>
+				<i class="fas fa-trophy break_icon"></i> <br>
+				<span class="circle_break">брейки</span>
+			</div>
+			</a>
+			<a class="circle_hover" href="#" >
+			<div class="player_profile_sparingCircle player_profile_circle">
+				<div class="little_circle">80</div>
+				<i class="fas fa-user-friends"></i>
+			</div>
+			</a>
+			<a class="circle_hover" href="#">
+			<div class="player_profile_sparingBreakCircle player_profile_circle">
+				<div class="little_circle">44</div>
+				<i class="fas fa-user-friends break_icon"></i> <br>
+				<span class="circle_break">брейки</span>
+			</div>
+			</a>
+		</div>
+	</section>
+	</div>
+</body>
+</html>
+

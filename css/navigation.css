@@ -1,0 +1,72 @@
+/* GENERAL NAVIGATION */
+
+.navigation-down {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.navigation-down ul {
+    padding-left: 0;
+}
+.navigation a {
+    box-sizing: border-box;
+    font-size: 90%;
+    display: block;
+    padding: 20px 45px 20px 45px;
+    color: white;
+    background-color: #232b2b;
+    text-transform: uppercase;
+    text-align: center;
+}
+.navigation ul {
+    margin: 0px;
+}
+.navigation ul li {
+    float: left;
+    list-style: none;
+}
+.navigation li a:hover {
+    background-color: #3d4747;
+}
+
+
+/* NAVIGATION IN TOURNAMENT*/
+
+.tournamentNavigation {
+    margin: 20px 20px;
+    box-sizing: border-box;
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.tournamentNavigation form {
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.tournamentNavigation form button[type="submit"]{
+    font-size: 90%;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 25px 10px 25px;
+    color: white;
+    background-color: #232b2b;
+    text-transform: uppercase;
+    text-align: center;
+    border:0px;
+}
+.tournamentNavigation form button[type="submit"]:hover {
+    background-color: #3d4747;
+}
+

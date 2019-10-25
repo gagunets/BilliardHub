@@ -12,9 +12,9 @@
     box-sizing: border-box;
     font-size: 90%;
     display: block;
-    padding: 20px 45px 20px 45px;
+    padding: 15px 20px;
     color: white;
-    background-color: #232b2b;
+    background-color: #2E3337;
     text-transform: uppercase;
     text-align: center;
 }
@@ -26,7 +26,7 @@
     list-style: none;
 }
 .navigation li a:hover {
-    background-color: #3d4747;
+    background-color: #54595E;
 }
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navigation Menu</title>
+	<link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/navMenu.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+	 <header>
+	 	<!-- LOGO --> 
+	 	<div class="logo_box">
+        <img class="logo_img" src="/Users/MacBook/Desktop/logo03.png" alt="SnookerLviv">
+        <span class="logo_text">billiard hub</span>
+        </div>
+                
+				
+		<!-- NAV MENU -->
+		 <nav class="navigation">
+		    <ul>
+				<li><a href="/~levko/admin/tournaments">Tournaments</a></li>
+				<li><a href="/~levko/admin/players">Players</a></li>
+				<li><a href="/~levko/admin/clubs">Clubs</a></li>
+				<li><a href="/~levko/admin/leagues">Leagues</a></li>
+				<li><a href="/~levko/admin/rankings">Rankings</a></li>
+				<li><a href="/~levko/admin/matches">Matches</a></li>
+			</ul>
+		</nav>
+				
+		<!-- BUTTONS -->
+		<div class="header_buttons">
+		<form action="/~levko/logout.php" class="login" method="post">
+			<input id="childOne" type="submit" value="Log out">
+		</form>
+		<form action="/~levko/playerHome.php" class="login" method="post">
+			<input type="submit" value="Home">
+		</form>
+		</div>
+     </header>
+</body>
+</html>

@@ -1,0 +1,164 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Exo 2', sans-serif;
+	padding: 0;
+	background-color: #222629;
+  	color: white;
+}
+.containerForAllTables {
+	width: 1080px;
+	margin: 0 auto;
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	border-top: 3px solid #61892F;
+}
+
+/*****  BUSY SNOOKER TABLE  *****/
+
+.stable_containers {
+	width: 520px;
+	margin: 50px 0px;
+}
+.busy_stable_container {
+	margin: 0px auto;
+	width: 520px;
+}
+.header_box {
+	font-size: 30px;
+	padding: 10px 0px;
+	text-align: center;
+}
+.stable_num_header {
+	display: block;
+	margin: 0 auto;
+}
+#busy {
+	color: #fff;
+}
+#free {
+	color: #fff;
+	margin-bottom: 20px;
+}
+.busy_stable_box {
+	position: relative;
+    z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 520px;
+	height: 268px;
+	max-height: 268px;
+	margin: 0px 0px;
+}
+.busy_stable_box:before {
+	 content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background: no-repeat;
+	background-size: 370px 236px;
+	background-position: center;
+	opacity: 0.2;
+	filter: blur(2px);
+    background-image: url(/Users/MacBook/Desktop/GitHub/BilliardHub/img/web/snooker_table.svg);
+}
+.boxFor_plName {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px 20px 0px;
+	width: 480px;
+}
+.plName {
+	font-size: 17px;
+	display: block;
+}
+.stable_plName_left {
+	padding: 4px 10px;
+	border-left: 3px solid #61892F;
+	border-radius: 4px;
+}
+.stable_plName_right {
+	padding: 4px 10px;
+	border-right: 3px solid #61892F;
+	border-radius: 4px;
+}
+.boxFor_imgs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 480px;
+
+}
+.circle_img_box_right,
+.circle_img_box_left {
+	display: flex;
+	flex-direction: column;
+	border-radius: 100px;
+}
+.circle_player_img {
+	border-radius: 100px;
+	width: 130px;
+	height: 130px;
+	object-fit: cover;
+	border: 4px solid #EBEBEB;
+}
+.current_game_info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 170px;
+	font-size: 15px;
+}
+#frame_num {
+	font-size: 17px;
+}
+.points_num {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/*****  FREE SNOOKER TABLE  *****/
+
+.free_stable_box {
+	width: 370px;
+	height: 236px;
+	margin: 0px auto;
+	background: no-repeat;
+	background-position: center;
+	opacity: 0.7;
+	/*filter: blur(4px);*/
+    background-image: url(/Users/MacBook/Desktop/GitHub/BilliardHub/img/web/snooker_table.svg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-duration: 0.2s;
+}
+.free_stable_container {
+	margin: 0px auto;
+	width: 520px;
+}
+.free_stable_box:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+.free_stable_num {
+	color: #32C24D;
+	font-size: 40px;
+}
+
+

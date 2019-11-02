@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin Panel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/navMenu.css">
+	<link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/admin_panel.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	 <header>
+	 	<!-- LOGO --> 
+	 	<div class="logo_box">
+        <img class="logo_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/sl_logo.png" alt="SnookerLviv">
+        <span class="logo_text">billiard hub</span>
+        </div>
+                
+				
+		<!-- NAV MENU -->
+		 <nav class="navigation" id="myTopnav">
+
+				<a href="/~levko/admin/tournaments">Турніри</a>
+				<a class="active" href="/~levko/admin/players">Гравці</a>
+				<a href="/~levko/admin/clubs">Клуби</a>
+				<a href="/~levko/admin/leagues">Ліги</a>
+				<a href="/~levko/admin/rankings">Рейтинг</a>
+				<a href="/~levko/admin/matches">Матчі</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   				 <i class="fa fa-bars"></i>
+ 				 </a>
+
+		</nav>
+				
+		<!-- BUTTONS -->
+		<div class="header_buttons">
+		<form action="/~levko/logout.php" class="login" method="post">
+			<i class="fas fa-sign-out-alt"></i>
+			<input id="childOne" type="submit" value="Вийти">
+		</form>
+		<form action="/~levko/playerHome.php" class="login" method="post">
+			<i class="fas fa-home"></i>
+			<input type="submit" value="Дім">
+		</form>
+		</div>
+
+     </header>
+
+	<section>
+		<div class="admin_header">
+			<span>Панель адміністратора</span>
+		</div>
+		<div class="admin_buttons">
+			<div class="buttons button_tour">
+				<span><i class="fas fa-trophy"></i> Створити турнір</span>
+				<button><i class="fas fa-trophy"></i> +</button>
+			</div>
+			<div class="buttons button_player">
+				<span><i class="fas fa-user"></i> Створити гравця</span>
+				<button><i class="fas fa-user"></i> +</button>
+			</div>
+			<div class="buttons button_club">
+				<span><i class="fas fa-shield-alt"></i> Створити клуб</span>
+				<button><i class="fas fa-shield-alt"></i> +</button>
+			</div>
+			<div class="buttons button_league">
+				<span><i class="fas fa-globe-americas"></i> Створити лігу</span>
+				<button><i class="fas fa-globe-americas"></i> +</button>
+			</div>
+		</div>
+		<div class="section_header">
+			<span>Клуби</span>
+		</div>
+	</section>
+	
+
+
+
+
+
+</body>
+</html>

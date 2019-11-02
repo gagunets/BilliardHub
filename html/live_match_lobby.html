@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/live_match_lobby.css"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(function() { 
@@ -28,19 +31,22 @@
 		
 		<div class="container">
 			<div class="live-match-lobby">
-				<img alt="logo" height="100px" width="100px" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/brain.png">
-				<h2 class="live-match-lobby-club-name">Club name</h2>
-				<h3 class="live-match-lobby-table-num">Стіл #12</h3>
+				<div class="live_match_info">
+					<img class="live_logo_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/sl_logo.png" alt="SnookerLviv">
+	       			 <span class="live_logo_text">billiard hub</span>
+       			</div>
+				<span class="live-match-lobby-table-num">Стіл #12</span>
 			</div>
 			<div class="live-match-lobby-table">
 				<h3 class="live-match-lobby-info">Раунд 1 - Зустріч 1</h3>
 				<div class="live-match-lobby-player-table">
-					<div class="live-match-lobby-player01 highlight">
-						<span class="live-match-lobby-player01-name">Лев</span>
-						<span class="live-match-lobby-player01-surname">Хрущ</span>
-						<p>
-							<img class="live-match-lobby-player01-img" alt="Lev Hrushch image" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/lev.jpg">
-						</p>
+					<div class="live-match-lobby-player01">
+						<div class="live_img_box pl_img_01">
+							<img class="live-match-lobby-player01-img" alt="Lev Hrushch image" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/lev.jpg">
+						</div>
+						<div class="live-player01-name">
+							<span class="live-match-lobby-player01-name">Лев Делятинський</span>
+						</div>
 					</div>
 					<div class="live-match-lobby-frame-section">
 						<table class="live-match-lobby-frame-table">
@@ -51,18 +57,18 @@
 									<td>3</td>
 								</tr>
 								<tr class="live-match-lobby-frame-details">
-									<td colspan="3">Best of 7</td>
+									<td class="live_borders" colspan="3">Best of 7</td>
 								</tr>
 								<tr>
-									<td>48</td>
+									<td>5</td>
 									<th>Points</th>
 									<td>89</td>
 								</tr>
 								<tr class="live-match-lobby-frame-details">
-									<td colspan="3">107 points left</td>
+									<td class="live_borders" colspan="3">107 points left</td>
 								</tr>
 								<tr>
-									<td>39</td>
+									<td>9</td>
 									<th>Break</th>
 									<td></td>
 								</tr>
@@ -78,14 +84,18 @@
 						</div>
 					</div>
 					<div class="live-match-lobby-player02 highlight">
-						<span class="live-match-lobby-player02-name">Данило</span>
-						<span class="live-match-lobby-player02-surname">Мило</span>
-						<p>
-							<img class="live-match-lobby-player02-img" alt="Danylo Mylo image" src="/Users/MacBook/Desktop/$/FrontDev/BilliardHub/img/dan02.jpg">
-						</p>
+						<div class="live_img_box pl_img_02">
+							<img class="live-match-lobby-player02-img" alt="Danylo Mylo image" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/02.jpg">
+						</div>
+						<div class="live-player02-name">
+							<span class="live-match-lobby-player02-name">Данило Соколов</span>
+						</div>
 					</div>
 				</div>
-
+				<div class="button_push">
+					<span>Натисніть <i class="fas fa-power-off"></i> щоб вийти</span>
+					<span>Натисніть <i class="fas fa-swimmer"></i> щоб піти поплавати</span>
+				</div>
 			</div>
 		</div>
 	</body>

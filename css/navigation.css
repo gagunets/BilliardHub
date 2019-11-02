@@ -1,20 +1,17 @@
 /* GENERAL NAVIGATION */
 
-.navigation-down {
+/*.navigation-down {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
-}
-.navigation-down ul {
-    padding-left: 0;
 }
 .navigation a {
     box-sizing: border-box;
     font-size: 90%;
     display: block;
-    padding: 15px 20px;
+    padding: 20px 45px 20px 45px;
     color: white;
-    background-color: #2E3337;
+    background-color: #232b2b;
     text-transform: uppercase;
     text-align: center;
 }
@@ -26,9 +23,9 @@
     list-style: none;
 }
 .navigation li a:hover {
-    background-color: #54595E;
+    background-color: #3d4747;
 }
-
+*/
 
 /* NAVIGATION IN TOURNAMENT*/
 

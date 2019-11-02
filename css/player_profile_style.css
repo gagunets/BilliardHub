@@ -1,7 +1,17 @@
+body {
+	font-family: 'Exo 2', sans-serif;
+	margin: 0 auto;
+}
+.profile_container {
+	width: 1080px;
+	margin: 0 auto;
+}
 .player_profile_section01 {
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
 	padding-bottom: 20px;
-	margin: 40px 0px;
+	margin: 20px 0px;
+	margin-top: 40px;			
 	border-bottom: 1px solid #474B4F;
 }
 .fa-user {
@@ -11,45 +21,51 @@
 	color: #86C232;
 }
 .player_profile_photo {
-	display: inline-block;
-	width: 380px;
-	height: 436px;
+	width: 250px;
+	height: 336px;
 	background-color: #33373B;
 	float: left;
-	margin-bottom: 30px;
-    border-radius: 3px;	
-    overflow: hidden;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 5px 10px #131617;
+	border-top: 3px solid #61892F;
 }
 .player_profile_img {
 	width: 100%;
-	height: auto;
-	max-height: 100%;
+	border-radius: 4px;
 	object-fit: contain;
 }
 .player_profile_personalInfo {
-	width: 500px;
-	height: 436px;
-	margin-left: 30px;
+	width: 650px;
+	height: 336px;
 	background-color: #33373B;
-	display: inline-block;
 	margin-bottom: 30px;
-	border-radius: 3px;
-	border-top: 3px solid #61892F;
+	border-radius: 8px;
+	box-shadow: 0px 5px 10px #131617;
 }
 .player_profile_personalInfo table {
-	width: 500px;
-	height: 433px;
+	width: 650px;
+	height: 336px;
 	border-collapse: collapse;
+	margin-top: 0;
+}
+
+.player_profile_playerName {
+	border-top: 3px solid #61892F;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .player_profile_header {
 	display: inline-block;
 	font-size: 20px;
-	font-family: 'Exo 2', sans-serif;
 	color: #86C232;
 }
 .player_profile_surname {
 	text-transform: uppercase;
-	font-family: 'Exo 2', sans-serif;
 	font-size: 23px;
 	color: #86C232;
 }
@@ -64,15 +80,17 @@
 	font-size: 20px;
 }
 .max_break {
-	border: 1px solid #61892F;
+	/*border: 1px solid #61892F;*/
 	border-radius: 50%;
 	display: inline-block;
-	padding: 10px;
-	background-color: #61892F;
+	/*background-color: #61892F;*/
+	color: #86C232;
+	font-weight: bold;
+	font-size: 22px;
 }
 .player_profile_personalInfo table th {
-	background-color: #474B4F;
-	height: 100px;
+	background-color: #222629;
+	height: 70px;
 }
 .player_profile_personalInfo table td {
 	width: 250px;
@@ -91,38 +109,66 @@
 }
 .player_profile_circle {
 	float: left;
-	margin: 20px 60px;
+	margin: 10px 60px;
+	padding-top: 10px;
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
 	background-color: #33373B;
 	text-align: center;
 	position: relative;
+	transition: 0.5s;
+	box-shadow: 0px 3px 10px #131617;
 }
 .fa-trophy,
 .fa-user-friends {
-	font-size: 50px;
-	margin-top: 32px;
+	font-size: 30px;
+	margin-top: 22px;
 	margin-bottom: 10px;
 	text-align: center;
 }
-.break_icon {
-	font-size: 40px;
-	margin-left: 5px;
-}
-.circle_break {
+.circle_text {
 	font-family: 'Exo 2', sans-serif;
 	text-transform: uppercase;
+	font-size: 15px;
 }
 .little_circle {
 	position: absolute;
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	background-color: #61892F;
 	border-radius: 50%;
-	padding-top: 5px;
+	padding-top: 7px;
 	box-shadow: 2px 2px 10px 0px #33373B;
+	z-index: 100;
 }
-.circle_hover div:hover {
+.player_profile_circle:hover {
+	background-color: #61892F;
+	cursor: pointer;
+}
+
+
+/*ACTIVE TAB CIRCLE*/
+.active {
 	background-color: #61892F;
 }
+
+/*CSS FOR TAB's CONTENT*/
+
+.tabcontent {
+	width: 1080px;
+	margin: 0 auto; /* for centering */
+	border-top: 3px solid #61892F;
+	border-radius: 8px;
+	display: none;
+	margin-top: 50px;
+	margin-bottom: 700px;
+	padding-top: 100px;
+}
+#tour, #tour_br, #spar, #spar_br {
+	text-align: center;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+

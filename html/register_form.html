@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register Form</title>
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/register_form.css"><link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--------- jQuery file --------->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="register_box">
+			<div class="register_img">
+				<img src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/sl_logo.png" alt="BilliardHub Logo">
+			</div>
+			<div class="register_header">
+				<span>Реєстрація</span>
+			</div>
+			<div class="main_reg_box">
+				<!-- Аватарка -->
+	   			<div class="avatar-upload">
+	        		<div class="avatar-preview">
+	            		<div id="imagePreview" style="background-image: url(/Users/MacBook/Desktop/default_image.png);">
+	            		</div>
+	        		</div>
+	         		<div class="avatar-edit">
+			            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+			            <label for="imageUpload"><i class="fas fa-upload"></i> Вибрати файл</label>
+	        		</div>
+	        		<div class="photo_requirements">
+	        			<span>
+	        				*Будь ласка, завантажуйте тільки горизонтальне фото.
+	        			</span>
+	        		</div>
+	    		</div>
+				<!-- Форма -->
+				<form class="register_form">
+				  <input type="text" placeholder="Ім'я">
+				  <input type="text" placeholder="Прізвище">
+				  <input type="number" placeholder="Дата народження">
+				  <span class="margin_b40px data_format">Дата повинна бути у форматі:</br>ДД/ММ/РРРР.</span>
+				  <input type="text" placeholder="Ім'я користувача">
+				  <input type="email" name="emailaddress" placeholder="E-mail" class="margin_b40px">
+				  <input type="password" placeholder="Пароль">
+				  <input type="password" placeholder="Підтвердіть пароль">
+				  <button>Зареєструватись</button>
+				  <div class="register_register">
+					<span>Увійти</span>
+				  </div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!--------- JS --------->
+
+<script>
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
+</script>
+</body>
+</html>

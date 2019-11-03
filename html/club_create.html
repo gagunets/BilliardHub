@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Club Create Form</title>
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/club_create.css"><link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--------- jQuery file --------->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="club_box">
+			<div class="club_img">
+				<img src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/sl_logo.png" alt="Сlub Logo">
+			</div>
+			<div class="club_header">
+				<span>Club create</span>
+			</div>
+			<div class="main_club_box">
+				<!-- Аватарка -->
+	   			<div class="club_avatar-upload">
+	        		<div class="club_avatar-preview">
+	            		<div id="club_imagePreview" style="background-image: url(/Users/MacBook/Desktop/default_image.png);">
+	            		</div>
+	        		</div>
+	         		<div class="club_avatar-edit">
+			            <input type='file' id="club_imageUpload" accept=".png, .jpg, .jpeg" />
+			            <label for="club_imageUpload"><i class="fas fa-upload"></i> Вибрати файл</label>
+	        		</div>
+	    		</div>
+				<!-- Форма -->
+				<form class="club_form">
+				  <input type="text" placeholder="Назва">
+				  <input type="text" placeholder="Країна">
+				  <input type="text" placeholder="Місто">
+				  <input type="text" placeholder="Кількість столів" class="margin_b50px">
+				  <button>Створити</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!--------- JS --------->
+
+<script>
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#club_imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#club_imagePreview').hide();
+            $('#club_imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#club_imageUpload").change(function() {
+    readURL(this);
+});
+</script>
+</body>
+</html>

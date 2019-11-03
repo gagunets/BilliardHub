@@ -8,7 +8,7 @@ body {
 	margin: 50px auto;
 	box-sizing: border-box;
 }
-.login_box {
+.knockout_box {
 	margin: 0 auto;
 	width: 300px;
 	height: auto;
@@ -23,18 +23,18 @@ body {
 	box-shadow: 0px 5px 10px #131617;
 	border-top: 3px solid #61892F;
 }
-.login_img img {
+.knockout_img img {
 	width: 100px;
 	padding: 20px 0;
 }
-.login_header {
+.knockout_header {
 	margin-bottom: 30px;
 }
-.login_header span {
+.knockout_header span {
 	font-size: 25px;
 	text-transform: uppercase;
 }
-.login_form {
+.knockout_form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -42,7 +42,7 @@ body {
 	align-items: center;
 	margin-bottom: 20px;
 }
-.login_form input {
+.knockout_form input {
 	padding: 10px;
 	margin-bottom: 20px;
 	width: 200px;
@@ -56,7 +56,7 @@ body {
 	border-left: 3px solid #61892F;
 
 }
-.login_form button {
+.knockout_form button {
 	margin-top: 20px;
 	border-radius: 4px;
 	border: none;
@@ -67,11 +67,11 @@ body {
 	height: 38px;
 	background-color: #61892F;
 }
-.login_form button:hover {
+.knockout_form button:hover {
 	background-color: #4F7027;
 	cursor: pointer;
 }
-.login_register {
+.knockout_register {
 	display: flex;
 	flex-direction: column;
 	font-size: 15px;
@@ -84,7 +84,7 @@ body {
 
 /* SELECTION FORM STYLING */
 
-.tour_select select {
+.knockout_select select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -96,11 +96,11 @@ body {
   background-image: none;
 }
 /* Remove IE arrow */
-.tour_select select::-ms-expand {
+.knockout_select select::-ms-expand {
   display: none;
 }
 /* Custom Select */
-.tour_select {
+.knockout_select {
   position: relative;
   display: flex;
   line-height: 4;
@@ -113,7 +113,7 @@ body {
   margin-bottom: 20px;
   padding-left: 3px;
 }
-.tour_select select {
+.knockout_select select {
   flex: 1;
   padding: 0 .5em;
   color: #fff;
@@ -121,7 +121,7 @@ body {
   font-size: 15px;
 }
 /* Arrow */
-.tour_select::after {
+.knockout_select::after {
   content: '\25BC';
   position: absolute;
   top: 0;
@@ -133,7 +133,7 @@ body {
   font-size: 11px;
 }
 /* Transition */
-.tour_select:hover::after {
+.knockout_select:hover::after {
   background-color: #61892F;
 }
 

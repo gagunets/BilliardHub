@@ -136,10 +136,6 @@ body {
 .tour_select:hover::after {
   background-color: #61892F;
 }
-disabled {
-   color: red;
-}
-
 
 
 

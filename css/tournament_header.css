@@ -1,0 +1,297 @@
+
+body {
+	font-family: 'Exo 2', sans-serif;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	background-color: #222629;
+	background: url(/Users/MacBook/Desktop/snooker_back02.png);
+	background-repeat: no-repeat;
+	color: white;
+	overflow-x: hidden;
+}
+* {
+	border -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+header {
+    background-color: #2E3337;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+ /*   height: 80px;
+    max-height: 80px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    box-shadow: 0px -10px 30px #000;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+.logo_box {
+	top: 0;
+	left: 0;
+	background-color: #2E3337;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	border-bottom-right-radius: 4px;
+}
+.logo_img {
+	margin: 10px;
+	height: 60px;
+	width: auto;
+	background-color: #2E3337;
+}
+.logo_text {
+	text-transform: uppercase;
+	font-size: 25px;
+	color: #DEC27A;
+	font-family: 'Merriweather', serif;
+}
+.navigation a {
+	border-bottom: 2px solid #2E3337;
+	font-size: 15px;
+    padding: 30px 20px;
+    color: white;
+    background-color: #2E3337;
+    text-transform: uppercase;
+    text-align: center;
+}
+.navigation  {
+	display: flex;
+	flex-direction: row;
+    float: left;
+    list-style: none;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+.navigation a:hover {
+    background-color: #444857;
+    border-bottom: 2px solid #86C232 /*#61892F*/;
+    border-radius: 4px;
+}
+.navigation a.active {
+    border-bottom: 2px solid #86C232;
+    border-radius: 4px;
+    color: #86C232;
+}
+.header_buttons {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	align-content: center;
+}
+.login {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 30px 7px;
+	justify-content: center;
+	margin-right: 20px;
+}
+.login input {
+	border: none;
+	color: #ffffff !important;
+	font-size: 15px;
+    display: block;
+    background-color: transparent; /*#61892F*/;
+}
+.login:hover {
+	background-color: #54772A;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.header_buttons #childOne {
+	border-bottom-left-radius: 4px;
+}
+
+
+/*****   TOURNAMENT MENU   *****/
+
+.tour_menu_box {
+	width: 1080px;
+	margin: 50px auto;
+}
+
+/*TOUR HEADER*/
+
+.tournament_header {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+	width: 1080px;
+}
+.tournament_header div {
+	flex: 1;
+}
+.nameOf_tour {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+.second_row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 300;
+}
+.typeOf_tour {
+	display: flex;
+	flex-direction: row;
+}
+.organOf_tour {
+	display: flex;
+	justify-content: flex-end;
+}
+.fa-trophy {
+	margin-right: 5px;
+}
+
+
+
+.tour_menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 50px;
+	align-items: center;
+	background-color: #34393E;
+	box-shadow: 0px 3px 10px #111314;
+	border-radius: 4px;
+}
+.tour_menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.tour_menu a {
+	color: white;
+	font-size: 15px;
+	padding: 0px 20px;
+	flex: 1;
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tour_menu a:hover {
+	background-color: #3F454C;
+    border-radius: 4px;
+}
+.tour_menu a.active {
+    color: #86C232;
+    background-color: #3F454C;
+}
+
+.fa-bars {
+	margin: 0 10px;
+}
+.navigation .icon,
+.tour_menu .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .navigation a {display: none;}
+  .navigation a.icon {
+    display: flex;
+    justify-content: center;
+  }
+  .navigation.responsive {
+  	position: relative;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	width: 100%;
+  	z-index: 0;
+  }
+  .navigation.responsive a:not(:first-child) {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+  }
+  .logo_box span {
+  	display: none;
+  }
+  .logo_box {
+  	position: absolute;
+  	left: 0;
+  	display: block;
+  	z-index: 1;
+  	background-color: transparent;
+  }
+  .logo_box img {
+	background-color: transparent;
+  }
+  .header_buttons {
+  	position: absolute;
+  	right: 0;
+  }
+  .header_buttons form input {
+	display: none;
+  }
+  header {
+  	align-items: flex-start;
+  	justify-content: center;
+  }
+  .tour_menu_box {
+  	width: 100%;
+  	overflow-x: hidden;
+  }
+  .tournament_header {
+  	width: 100%;
+  	padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tour_menu a {display: none;}
+  .tour_menu a.icon {
+    display: flex;
+    box-shadow: 0px 1px 5px #111314;
+    width: 100%;
+	padding: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tour_menu.responsive {
+  	position: relative;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	height: auto;
+  	width: 100%;
+  }
+  .tour_menu.responsive a:not(:first-child) {
+  	width: 100%;
+	padding: 15px;
+    display: flex;
+    text-align: center;
+  }
+  .tour_menu_box {
+	margin: 20px auto;
+	}
+	.second_row {
+		flex-direction: column;
+		align-items: flex-start;
+		font-size: 15px;
+	}
+}
+

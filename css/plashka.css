@@ -1,0 +1,93 @@
+body {
+	font-family: 'Exo 2', sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #222629;
+	color: white;
+	text-align: center;
+	margin: 50px auto;
+	box-sizing: border-box;
+}
+.plashka_box {
+	margin: 0 auto;
+	width: 700px;
+	height: 40px;
+	max-height: 40px;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	background-color: #33373B;
+	border-radius: 4px;
+	box-shadow: 0px 5px 10px #131617;
+	border-right: 3px solid #61892F;
+	border-left: 3px solid #61892F;
+}
+/*.plashka_box div {
+	flex: 1;
+}*/
+.plashka_pl01,
+.plashka_pl02 {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	height: 37px;
+	border-radius: 4px;
+	/*text-transform: uppercase;*/
+	width: 200px;
+}
+.plashka_pl01 {
+	justify-content: flex-start;
+}
+.plashka_pl02 {
+	justify-content: flex-end;
+}
+.plashka_points {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: inherit;
+	width: 300px;
+	font-size: 17px;
+}
+.plashka_style {
+	display: flex;
+	justify-content: center;
+	background-color: #61892F;
+	border-radius: 4px;
+	align-items: center;
+	width: 50px;
+}
+.central_points {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 10px;
+	width: 100px;
+	font-weight: bold;
+}
+.central_points span {
+	flex: 1;
+}
+.plashka_frame {
+	padding: 0 10px;
+}
+
+ /*HIGHLIGHTS*/
+
+.plashka_highlight {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #86C232;
+	font-size: 25px;
+	margin: 0 10px;
+}
+.highlight_no {
+	color: #33373B;
+}
+

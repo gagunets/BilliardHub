@@ -1,193 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>NFSU etap 1</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/~levko/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/participants.css">
-    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="/~levko/css/bracket.css">
-    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/styles.css"> 
-    <link rel="stylesheet" type="text/css" href="/~levko/css/group.css"> 
-    <link rel="stylesheet" type="text/css" href="/~levko/css/matches-list.css"> 
-    <link rel="stylesheet" type="text/css" href="/~levko/css/lobby_list_styles.css"> 
-    <link rel="stylesheet" type="text/css" href="/~levko/css/match_lobby_style.css"> 
-    <link rel="stylesheet" type="text/css" href="/~levko/css/tournament_list_style.css"> 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="/~levko/img/balls01.png">
+	<meta charset="UTF-8">
+	<title>Bars</title>
+	<link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/styles.css"> 
+	<link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/bars.css"> 
 	<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-
 <body>
-   
-
-<section class="sub-container">
-    <div class="header_search">
-        <div class="participants_header">
-            <h3>Список гравців</h3>
-            <div class="tab">
-                <button class="tablinks active" onclick="openTab(event, 'list')"> <i class="fas fa-bars"></i></button>
-                <button class="tablinks" onclick="openTab(event, 'bars')"><i class="fas fa-th-large"></i></button>
-            </div>
-        </div>
-        <div class="players_list_search_field">
-            <form class="centered_search_div" action="#">
-             <input id="myInput" onkeyup="myFunction()" type="text" placeholder="Пошук.." name="search">
-             </form>
-        </div>
-    </div>
-
-
-<div id="list" class="sub-container tabcontent">
-    <div class="participants_table_container">
-    <table id="myTable" class="participants_table">
-        <colgroup>
-            <col class="col-1">
-            <col class="col-2">
-            <col class="col-3">
-            <col class="col-4">
-            <col class="col-5">
-            <col class="col-6">
-        </colgroup>
-        <thead class="participants_table_thead">
-            <tr>
-                <th>#</th>
-                <th>Ім'я</th>
-                <th>Дата народження</th>
-                <th>Звання</th>
-                <th>Локація</th>
-                <th>Жереб</th>
-            </tr>
-        </thead>
-        <tbody class="participants_table_tbody">
-    <tr onclick="window.location.href='matchLobby.php?id=12';"
-        class="participants_table_tbody_odd participants_table_pointer">
-        <td class="participants_table_number odd_num">1</td>
-        <td class="participants_table_name">
-            <img class="circle_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan.jpg" alt="img">
-            <span>Gag Kryvko</span>
-        </td>
-        <td>
-            <span>14/08/1997</span> 
-        </td>
-        <td>
-            <span>КМС</span>
-        </td>
-        <td>
-            <span>Львів, Україна</span>
-        </td>
-        <td>
-            <span>99</span>
-        </td>
-    </tr>
-    <tr onclick="window.location.href='matchLobby.php?id=12';"
-        class="participants_table_tbody_even participants_table_pointer">
-        <td class="participants_table_number">2</td>
-        <td class="participants_table_name">
-            <img class="circle_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan01.jpg" alt="img">
-            <span>Rar Kryvko</span>
-        </td>
-        <td>
-            <span>14/08/1997</span> 
-        </td>
-        <td>
-            <span>КМС</span>
-        </td>
-        <td>
-            <span>Львів, Україна</span>
-        </td>
-        <td>
-            <span>99</span>
-        </td>
-    </tr>
-    <tr onclick="window.location.href='matchLobby.php?id=12';"
-        class="participants_table_tbody_odd participants_table_pointer">
-        <td class="participants_table_number odd_num">3</td>
-        <td class="participants_table_name">
-            <img class="circle_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/02.jpg" alt="img">
-            <span>Gag Kryvko</span>
-        </td>
-        <td>
-            <span>14/08/1997</span> 
-        </td>
-        <td>
-            <span>КМС</span>
-        </td>
-        <td>
-            <span>Львів, Україна</span>
-        </td>
-        <td>
-            <span>99</span>
-        </td>
-    </tr>
-    <tr onclick="window.location.href='matchLobby.php?id=12';"
-        class="participants_table_tbody_even participants_table_pointer">
-        <td class="participants_table_number">4</td>
-        <td class="participants_table_name">
-            <img class="circle_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/hr.jpg" alt="img">
-            <span>Bogdan Kryvko</span>
-        </td>
-        <td>
-            <span>14/08/1997</span> 
-        </td>
-        <td>
-            <span>КМС</span>
-        </td>
-        <td>
-            <span>Львів, Україна</span>
-        </td>
-        <td>
-            <span>99</span>
-        </td>
-    </tr>
-    <tr onclick="window.location.href='matchLobby.php?id=12';"
-        class="participants_table_tbody_odd participants_table_pointer">
-        <td class="participants_table_number odd_num">5</td>
-        <td class="participants_table_name">
-            <img class="circle_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan.jpg" alt="img">
-            <span>Bogdan Kryvko</span>
-        </td>
-        <td>
-            <span>14/08/1997</span> 
-        </td>
-        <td>
-            <span>КМС</span>
-        </td>
-        <td>
-            <span>Львів, Україна</span>
-        </td>
-        <td>
-            <span>99</span>
-        </td>
-    </tr>
-    <tr onclick="window.location.href='matchLobby.php?id=12';"
-        class="participants_table_tbody_even participants_table_pointer">
-        <td class="participants_table_number ptable_border_radius_bl">6</td>
-        <td class="participants_table_name">
-            <img class="circle_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan01.jpg" alt="img">
-            <span>Bogdan Kryvko</span>
-        </td>
-        <td>
-            <span>14/08/1997</span> 
-        </td>
-        <td>
-            <span>КМС</span>
-        </td>
-        <td>
-            <span>Львів, Україна</span>
-        </td>
-        <td class="ptable_border_radius_br">
-            <span>99</span>
-        </td>
-    </tr>
-</tbody>
-</table>
-</div>
-</div>
-
-
+	
 <div id="bars" class="players_list_box tabcontent">
                 <ul class="players_u-list_item" id="myUL">
                     <li>
@@ -230,7 +52,7 @@
                         <a href="#">
                         <div class="players_list_item_box">
                             <figure>
-                                <img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan02.jpg">
+                                <img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/default_image.png">
                             </figure>
                             <div class="players_list_item_details">
                                     <h4 class="players_list_item_name">
@@ -298,7 +120,7 @@
                         <a href="#">
                         <div class="players_list_item_box">
                             <figure>
-                                <img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan02.jpg">
+                                <img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/default_image.png">
                             </figure>
                             <div class="players_list_item_details">
                                     <h4 class="players_list_item_name">
@@ -332,7 +154,7 @@
                         <a href="#">
                         <div class="players_list_item_box">
                             <figure>
-                                <img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan02.jpg">
+                                <img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/default_image.png">
                             </figure>
                             <div class="players_list_item_details">
                                     <h4 class="players_list_item_name">
@@ -349,7 +171,7 @@
                         <a href="#">
                         <div class="players_list_item_box">
                             <figure>
-                                <img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan02.jpg">
+                                <img class="players_list_item_photo" alt="фото_гравця" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/default_image.png">
                             </figure>
                             <div class="players_list_item_details">
                                     <h4 class="players_list_item_name">
@@ -415,58 +237,5 @@
                     </li>
                 </ul>
             </div>
-</section>
-
-
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue, ul, li, a;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-   ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-    // list = document.getElementById('myUL');
-
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    } 
-  }
-
-  for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              li[i].style.display = "flex";
-            } else {
-              li[i].style.display = "none";
-            }
-          }
-}
-
-
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "flex";
-  evt.currentTarget.className += " active";
-}
-</script>
 </body>
 </html>
-

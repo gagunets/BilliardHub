@@ -1,6 +1,6 @@
 body {
 	font-family: 'Open Sans', Arial, sans-serif;
-	background-color: #222629;
+	background-color: #000;
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -12,7 +12,7 @@ a {
 	color: #fff;
 }
 .container {
-	color: #fff;
+	color: #000;
     text-align: center;
     margin-top: 100px;
 }
@@ -106,3 +106,15 @@ table.matches_list_table .col-5 {
 .matches_list_table_pointer {
 	cursor: pointer;
 }
+.matches_list_table_live {
+	font-size: 15px;
+	color: #B50000;
+}
+
+
+
+
+
+
+
+

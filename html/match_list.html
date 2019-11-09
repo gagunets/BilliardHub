@@ -5,14 +5,14 @@
     <title>NFSU etap 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/~levko/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Downloads/matches_list/navigation.css">
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="/~levko/css/bracket.css">
-    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Downloads/matches_list/styles.css"> 
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/styles.css"> 
     <link rel="stylesheet" type="text/css" href="/~levko/css/group.css"> 
     <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/matches-list.css"> 
     <link rel="stylesheet" type="text/css" href="/~levko/css/lobby_list_styles.css"> 
     <link rel="stylesheet" type="text/css" href="/~levko/css/match_lobby_style.css"> 
-    <link rel="stylesheet" type="text/css" href="/~levko/css/tournament_list_style.css"> 
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/tournament_list_style.css"> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="/~levko/img/balls01.png">
@@ -22,47 +22,9 @@
 
 
 <body>
-     <header>
-        <div class="container">
-            <div class="logologin clearfix">
-                <img src="/~levko/img/balls01.png" alt="SnookerLviv">
-                <form action="/~levko/logout.php" class="login" method="post">
-                    <input type="submit" value="Logout">
-                </form>
-                <form action="/~levko/playerHome.php" class="login" method="post">
-                    <input type="submit" value="Home">
-                </form>
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="/~levko/admin/tournaments">Tournaments</a></li>
-                        <li><a href="/~levko/admin/players">Players</a></li>
-                        <li><a href="/~levko/admin/clubs">Clubs</a></li>
-                        <li><a href="/~levko/admin/leagues">Leagues</a></li>
-                        <li><a href="/~levko/admin/rankings">Rankings</a></li>
-                        <li><a href="/~levko/admin/matches">Matches</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-     </header>
-
 	<div class="container">
 
-<h1>NFSU etap 1 (Snooker Seniors )</h1>
-
-
-<nav class="navigation navigation-down">
-    <ul>
-        <li><a href="lobby.php?id=1&onClick=live">Live</a></li>
-        <li><a href="lobby.php?id=1&onClick=groups">Groups</a></li>
-        <li><a href="lobby.php?id=1&onClick=groupStanding">Group Standings</a></li>
-        <li><a href="lobby.php?id=1&onClick=bracket">Bracket</a></li>
-        <li><a href="lobby.php?id=1&onClick=matches">Matches</a></li>
-        <li><a href="lobby.php?id=1&onClick=players">Players</a></li>
-        <li><a href="lobby.php?id=1&onClick=breaks">Breaks</a></li>
-    </ul>
-</nav>
-
+<h1>NFSU etap 1 (Snooker Seniors)</h1>
 
 <div class="sub-container"><div class="round_num_div"><h3 class="matches_list_table_round_num">група 1</h3></div>	
 <div class="matches_list_table_borRad_div">
@@ -78,6 +40,7 @@
 		<thead class="matches_list_table_thead">
 			<tr>
 				<th>#</th>
+				<th></th>
 				<th>Гравець 1</th>
 				<th>v</th>
 				<th>Гравець 2</th>
@@ -88,13 +51,14 @@
 	<tr onclick="window.location.href='matchLobby.php?id=12';"
 		class="matches_list_table_tbody_odd matches_list_table_pointer">
 		<td class="matches_list_table_number odd_num">1</td>
+		<td class="live">live</td>
 		<td class="matches_list_table_name_right">Bogdan Kryvko</td>
 		<td class="matches_list_table_score">
 			<table class="matches_list_table_score_row">
 			<tr>
-				<td><span class="matches_list_table_score01"></span></td>
+				<td><span class="matches_list_table_score01">2</span></td>
 				<td><span class="matches_list_table_best_of">(3)</span></td>
-				<td><span class="matches_list_table_score02"></span></td>
+				<td><span class="matches_list_table_score02">4</span></td>
 			</tr>
 			</table>
 		</td>
@@ -106,13 +70,14 @@
 	<tr onclick="window.location.href='matchLobby.php?id=13';"
 		class="matches_list_table_tbody_even matches_list_table_pointer">
 		<td class="matches_list_table_number">2</td>
+		<td class=""></td>
 		<td class="matches_list_table_name_right">Valentyn Kharlov</td>
 		<td class="matches_list_table_score">
 			<table class="matches_list_table_score_row">
 			<tr>
-				<td><span class="matches_list_table_score01"></span></td>
+				<td><span class="matches_list_table_score01">6</span></td>
 				<td><span class="matches_list_table_best_of">(3)</span></td>
-				<td><span class="matches_list_table_score02"></span></td>
+				<td><span class="matches_list_table_score02">9</span></td>
 			</tr>
 			</table>
 		</td>
@@ -121,78 +86,6 @@
 						<a href="https://www.youtube.com/watch?v=-zZbkPnBtS8">
 				<i class="fab fa-youtube"></i>
 			</a>
-					</td>
-	</tr>
-
-	<tr onclick="window.location.href='matchLobby.php?id=14';"
-		class="matches_list_table_tbody_odd matches_list_table_pointer">
-		<td class="matches_list_table_number odd_num">3</td>
-		<td class="matches_list_table_name_right">Bogdan Kryvko</td>
-		<td class="matches_list_table_score">
-			<table class="matches_list_table_score_row">
-			<tr>
-				<td><span class="matches_list_table_score01"></span></td>
-				<td><span class="matches_list_table_best_of">(3)</span></td>
-				<td><span class="matches_list_table_score02"></span></td>
-			</tr>
-			</table>
-		</td>
-		<td class="matches_list_table_name_left">Pavlo Solomenchuk</td>
-		<td class="matches_list_table_youtube">
-					</td>
-	</tr>
-
-	<tr onclick="window.location.href='matchLobby.php?id=15';"
-		class="matches_list_table_tbody_even matches_list_table_pointer">
-		<td class="matches_list_table_number">4</td>
-		<td class="matches_list_table_name_right">Valentyn Kharlov</td>
-		<td class="matches_list_table_score">
-			<table class="matches_list_table_score_row">
-			<tr>
-				<td><span class="matches_list_table_score01"></span></td>
-				<td><span class="matches_list_table_best_of">(3)</span></td>
-				<td><span class="matches_list_table_score02"></span></td>
-			</tr>
-			</table>
-		</td>
-		<td class="matches_list_table_name_left">Bogdan Sokhan</td>
-		<td class="matches_list_table_youtube even_youtube">
-					</td>
-	</tr>
-
-	<tr onclick="window.location.href='matchLobby.php?id=16';"
-		class="matches_list_table_tbody_odd matches_list_table_pointer">
-		<td class="matches_list_table_number odd_num">5</td>
-		<td class="matches_list_table_name_right">Bogdan Kryvko</td>
-		<td class="matches_list_table_score">
-			<table class="matches_list_table_score_row">
-			<tr>
-				<td><span class="matches_list_table_score01"></span></td>
-				<td><span class="matches_list_table_best_of">(3)</span></td>
-				<td><span class="matches_list_table_score02"></span></td>
-			</tr>
-			</table>
-		</td>
-		<td class="matches_list_table_name_left">Valentyn Kharlov</td>
-		<td class="matches_list_table_youtube">
-					</td>
-	</tr>
-
-	<tr onclick="window.location.href='matchLobby.php?id=17';"
-		class="matches_list_table_tbody_even matches_list_table_pointer">
-		<td class="matches_list_table_number matches_list_table_borRad-bl">6</td>
-		<td class="matches_list_table_name_right">Pavlo Solomenchuk</td>
-		<td class="matches_list_table_score">
-			<table class="matches_list_table_score_row">
-			<tr>
-				<td><span class="matches_list_table_score01"></span></td>
-				<td><span class="matches_list_table_best_of">(3)</span></td>
-				<td><span class="matches_list_table_score02"></span></td>
-			</tr>
-			</table>
-		</td>
-		<td class="matches_list_table_name_left">Bogdan Sokhan</td>
-		<td class="matches_list_table_youtube even_youtube matches_list_table_borRad-br">
 					</td>
 	</tr>
 

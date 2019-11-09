@@ -22,7 +22,7 @@ table.matches_list_table .col-1 {
  	width: 5%;
 }
 table.matches_list_table .col-2 {
- 	width: 30%;
+ 	width: 5%;
 }
 table.matches_list_table .col-3 {
  	width: 30%;
@@ -31,7 +31,7 @@ table.matches_list_table .col-4 {
  	width: 30%;
 }
 table.matches_list_table .col-5 {
- 	width: 5%;
+ 	width: 30%;
 }
 table.matches_list_table .col-6 {
  	width: 5%;
@@ -72,7 +72,7 @@ table.matches_list_table .col-6 {
 .matches_list_table_name_left {
 	text-align: left;
 	font-size: 15px;
-	vertical-align: middle;
+	vertical-align: middle; 
 }
 .matches_list_table_tbody_odd {
 	background-color: #54595E;
@@ -99,19 +99,31 @@ table.matches_list_table .col-6 {
 .even_youtube {
 	background-color: #43464A;
 }
-.matches_list_table thead tr>:nth-child(2) {
+.matches_list_table thead tr>:nth-child(3) {
 	text-align: right;
 }
-.matches_list_table thead tr>:nth-child(4) {
+.matches_list_table thead tr>:nth-child(5) {
 	text-align: left;
 }
 .matches_list_table_borRad_div {
 	border-top: 3px solid #61892F;
-	border-radius: 3px;
+	border-radius: 8px;
 }
 .matches_list_table_borRad-bl {
-	border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 8px;
 }
 .matches_list_table_borRad-br {
-	border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 8px;
 }
+.live {
+	color: #FB3B00;
+	animation: blink 2s linear infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+

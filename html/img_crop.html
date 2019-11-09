@@ -27,15 +27,6 @@
             <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
             <label for="imageUpload"><i class="fas fa-upload"></i> Завантажити</label>
         </div>
-        
-        
-        <div class="demo"></div>
-            <img class="my-image" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/02.jpg"/>
-        <script>
-         $('.my-image').croppie();
-        </script>
-
-
     </div>
 </div>
 
@@ -57,11 +48,6 @@ function readURL(input) {
 $("#imageUpload").change(function() {
     readURL(this);
 });
-
-
-var c = new Croppie(document.getElementById('item'), opts);
-// call a method
-c.method(args);
 </script>
 
 </body>

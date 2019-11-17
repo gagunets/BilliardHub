@@ -25,7 +25,7 @@
 				
 		<!-- NAV MENU -->
 		 <nav class="navigation" id="myTopnav">
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
    				 <i class="fa fa-bars"></i>Меню
  				 </a>
 				<a href="/~levko/admin/tournaments">Турніри</a>
@@ -55,8 +55,13 @@
      <div class="tour_menu_box">
      	<div class="tournament_header">
      		<div class="nameOf_tour">
-	     		<i class="fas fa-trophy"></i>
-	     		<span>Назва турніру</span>
+     			<div class="name_icon">
+		     		<i class="fas fa-trophy"></i>
+		     		<span>Назва турніру</span>
+	     		</div>
+	     		<div class="reg_button">
+	     			<button>Ви успішно зареєструвались.</button>
+	     		</div>
      		</div>
      		<div class="second_row">
 	     		<div class="typeOf_tour">
@@ -69,7 +74,7 @@
 	     	</div>
      	</div>
      	<nav class="tour_menu" id="myTopnavTour">
-     			<a href="javascript:void(0);" class="icon" onclick="myFunctionTour()">
+     			<a href="javascript:void(0);" class="icon" onclick="mobileTourMenu()">
    				 <i class="fa fa-bars"></i>Турнірне меню
  				 </a>
 				<a href="/~levko/admin/tournaments">Турніри</a>
@@ -82,7 +87,7 @@
      </div>
 
      <script>
-			function myFunction() {
+			function mobileMenu() {
 			  var x = document.getElementById("myTopnav");
 			  if (x.className === "navigation") {
 			    x.className += " responsive";
@@ -91,7 +96,7 @@
 			  }
 			}
 
-			function myFunctionTour() {
+			function mobileTourMenu() {
 			  var x = document.getElementById("myTopnavTour");
 			  if (x.className === "tour_menu") {
 			    x.className += " responsive";

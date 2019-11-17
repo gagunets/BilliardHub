@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	max-width: 100%;
 	background-color: #222629;
-	background: url(/Users/MacBook/Desktop/snooker_back02.png);
+	background: url(/Users/MacBook/Desktop/snooker_back03.png);
 	background-repeat: no-repeat;
 	color: white;
 	overflow-x: hidden;
@@ -118,6 +118,7 @@ header {
 .tour_menu_box {
 	width: 1080px;
 	margin: 50px auto;
+	overflow-x: hidden;
 }
 
 /*TOUR HEADER*/
@@ -133,11 +134,12 @@ header {
 }
 .nameOf_tour {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: row;
 	align-items: center;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 	font-size: 25px;
+	width: 100%;
 }
 .second_row {
 	display: flex;
@@ -157,6 +159,24 @@ header {
 }
 .fa-trophy {
 	margin-right: 5px;
+}
+.name_icon {
+	position: absolute;
+}
+.reg_button {
+	display: flex;
+	justify-content: center;
+}
+.reg_button button {
+	border-radius: 4px;
+	border: none;
+	color: #86C232;
+	font-size: 15px;
+	text-align: center;
+	width: auto;
+	height: 38px;
+	padding:0 10px;
+	background-color: #30363B;
 }
 
 
@@ -205,7 +225,7 @@ header {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
   .navigation a {display: none;}
   .navigation a.icon {
@@ -217,7 +237,7 @@ header {
   	display: flex;
   	flex-direction: column;
   	justify-content: center;
-  	width: 100%;
+  	width: 50%;
   	z-index: 0;
   }
   .navigation.responsive a:not(:first-child) {
@@ -246,21 +266,18 @@ header {
   .header_buttons form input {
 	display: none;
   }
+  .header_buttons form {
+		padding: 0 20px;
+		margin-right: 0;
+		height: 100%;
+	}
   header {
   	align-items: flex-start;
   	justify-content: center;
   }
-  .tour_menu_box {
-  	width: 100%;
-  	overflow-x: hidden;
-  }
-  .tournament_header {
-  	width: 100%;
-  	padding: 0 30px;
-  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .tour_menu a {display: none;}
   .tour_menu a.icon {
     display: flex;
@@ -270,7 +287,7 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .tour_menu.responsive {
   	position: relative;
   	display: flex;
@@ -292,6 +309,38 @@ header {
 		flex-direction: column;
 		align-items: flex-start;
 		font-size: 15px;
+	}
+	 .tour_menu_box {
+  	width: 100%;
+  	overflow-x: hidden;
+	  }
+	  .tournament_header {
+	  	width: 100%;
+	  	padding: 0 30px;
+	  	margin-bottom: 40px;
+	  }
+	  .name_icon {
+		position: static;
+	}
+	  .nameOf_tour {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	 /* .reg_button, .name_icon {
+		display: flex;
+		justify-content: flex-start;
+	}*/
+	.reg_button button {
+		border-radius: 4px;
+		border: none;
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		width: 200px;
+		height: 38px;
+		background-color: #61892F;
+		margin-top: 20px;
 	}
 }
 

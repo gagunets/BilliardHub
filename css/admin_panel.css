@@ -1,13 +1,16 @@
 section {
 	font-family: 'Exo 2', sans-serif;
+	width: 100%;
+	overflow: hidden;
 }
 
 .admin_buttons {
-	width: 1080px;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
+	
 }
 .buttons {
 	display: flex;
@@ -72,12 +75,62 @@ section {
 	cursor: pointer;
 }
 
-/*PlAYER BUTTON*/
+
+
+/*MOBILE RESPONSIVE*/
+
+@media screen and (max-width: 600px) {
+	  .admin_header span {
+        font-size: 25px;
+        color: #434B52;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 20px;
+        width: 100%;
+        border-bottom: 1px solid #474B4F;
+        box-shadow: 0 5px 10px #111415;
+    }
+	.admin_buttons {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	}
+	section {
+		width: 100%;
+	}
+	.buttons {
+		margin: 20px 0px;
+	}
+	.button_tour button,
+	.button_player button,
+	.button_club button,
+	.button_league button {
+		width: 100px;
+		padding: 10px 10px;
+		font-size: 15px;
+		border-radius: 4px;
+		margin-top: 15px;
+	}
+	.button_tour span,
+	.button_player span,
+	.button_club span,
+	.button_league span {
+		font-size: 15px;
+		font-family: 'Exo 2', sans-serif;
+	}
+}
 
 
 
-/*CLUB BUTTON*/
 
 
 
-/*LEAGUE BUTTON*/
+

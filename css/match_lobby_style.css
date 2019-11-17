@@ -13,16 +13,19 @@ table {
 }
 section {
     text-align: center;
+    overflow: auto;
 }
 .match_lobby {
 	display: inline-block;
-	max-width: 700px;
-	min-width: 700px;
+	width: 700px;
+	/*max-width: 700px;
+	min-width: 700px;*/
 	margin-top: 40px;   /*  відступ зверху  */
 	background-color: #474B4F;
 	border-top: 3px solid #61892F;
 	border-radius: 4px;
 	margin-bottom: 0px;
+	overflow: auto;
 }
 .match_lobby_info {
 	padding: 12px;
@@ -40,30 +43,31 @@ section {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 254px;
-	max-height: 254px;
-	min-height: 254px;
-    padding-top: 20px;
+	height: auto;
+	/*max-height: 254px;
+	min-height: 254px;*/
+    padding-top: 10px;
+}
+.match_lobby_player01,
+.match_lobby_player02,
+.match_lobby_frame-section {
+	flex: 1;
 }
 .match_lobby_player01,
 .match_lobby_player02 {
-	/*padding: 10px 40px;*/
-	display: block;
+	display: flex;
+	flex-direction: column;
 	box-sizing: border-box;	
 }
 .match_lobby_frame-section {
-	float: left;
-	position: relative;
-	display: block;
-	box-sizing: border-box;
-	padding: 0px 20px;
+	display: flex;
+	justify-content: center;
 	margin-top: 60px;
 }
 .match_lobby_player01-name,
 .match_lobby_player02-name {
 	color: white;
 	font-size: 17px;
-	margin-bottom: 20px;
 }
 .match_lobby_player01-name {
 	float: left;
@@ -75,8 +79,8 @@ section {
 .match_lobby_player02-img {
 	width: 120px;
 	max-width: 120px;
-	height: auto;
-	max-height: 170px;
+	height: 150
+	max-height: 150px;
 	border-radius: 4px;
 }
 .match_lobby_frame-section tr th {
@@ -93,8 +97,10 @@ section {
 	font-weight: 500;
 	color: #fff;
 	text-align: center;
-	padding: 0px 30px;
 	vertical-align: middle;
+	width: 80px;
+	max-width: 80px;
+	min-width: 80px;
 }
 .match_lobby_frame-section table tr.match_lobby_frame-details td {
 	font-size: 12px;
@@ -109,15 +115,47 @@ section {
 }
 
 
+/*MOBILE RESPNSIVE (VS)*/
+
+@media screen and (max-width: 600px) {
+	.match_lobby_player01-name,
+.match_lobby_player02-name {
+	font-size: 14px;
+}
+.match_lobby_player01-img,
+.match_lobby_player02-img {
+	width: 100px;
+	max-width: 100px;
+	height: 120px;
+	max-height: 120px;
+	object-fit: cover;
+}
+.match_lobby_frame-section tr th {
+	font-size: 14px;
+	padding: 10px;
+}
+.match_lobby_frame-section tr td {
+	font-size: 20px;
+	width: 40px;
+	max-width: 40px;
+	min-width: 40px;
+}
+.match_lobby_player01-name,
+.match_lobby_player02-name {
+	height: 30px;
+}
+}
+
+
+
+
+
 /*********** TABLE ***********/
 
 .match_lobby_framesBreaksPoits_table {
 	display: inline-block;
 	color: #fff;
-	max-width: 700px;
-	min-width: 700px;
-	/*margin-top: -19px;*/
-	/*border-top: 3px solid #61892F;*/
+	width: 700px;
 	border-radius: 4px;
 }
 .pointer {
@@ -126,8 +164,8 @@ section {
 .match_lobby_table {
 	margin-bottom: 30px;
 	width: 700px;
-	max-width: 700px;
-	min-width: 700px;
+	/*max-width: 700px;
+	min-width: 700px;*/
 }
 .match_lobby_table thead th {
 	text-transform: uppercase;
@@ -190,3 +228,59 @@ section {
 .match_lobby_table_pointer {
 	cursor: pointer;
 }
+
+
+/*MOBILE RESPNSIVE*/
+.res {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	section  {
+		width: 100%;
+    	overflow: auto;
+    	padding: 0 10px;
+	}
+	.match_lobby {
+		overflow: auto;
+		width: 100%;
+	}
+	.match_lobby_framesBreaksPoits_table,
+	.match_lobby_table {
+		width: 100%;
+    	overflow: auto;
+	}
+	.match_lobby_info {
+		width: 100%;
+		overflow: scroll;
+	}
+	.match_lobby_table thead th {
+	padding: 10px 0px;
+	font-size: 13px;
+}
+	.match_lobby_table .match_lobby_table_tbody tr td {
+	padding: 10px;
+}
+.match_lobby_table_tbody_odd td,
+.match_lobby_table_tbody_even td{
+	font-size: 14px;
+}
+.match_lobby_table_tbody tr>:nth-child(2),
+.match_lobby_table_tbody tr>:nth-child(4) {
+	font-size: 16px;
+}
+.res {
+	display: block;
+}
+.non_res {
+	display: none;
+}
+}
+
+
+
+
+
+
+
+

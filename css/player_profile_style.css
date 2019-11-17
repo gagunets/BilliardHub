@@ -24,7 +24,7 @@ body {
 .player_profile_photo {
 	width: 250px;
 	height: 336px;
-	background-color: #33373B;
+	background-color: #222629;
 	float: left;
 	border-radius: 8px;
 	overflow: hidden;
@@ -81,10 +81,8 @@ body {
 	font-size: 20px;
 }
 .max_break {
-	/*border: 1px solid #61892F;*/
 	border-radius: 50%;
 	display: inline-block;
-	/*background-color: #61892F;*/
 	color: #86C232;
 	font-weight: bold;
 	font-size: 22px;
@@ -102,6 +100,8 @@ body {
 .player_profile_personalInfo table tr td:last-child {
 	border-left: 1px solid #474B4F;
 }
+
+
 
 /*SECTION 02*/
 

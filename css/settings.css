@@ -1,0 +1,190 @@
+body {
+	font-family: 'Exo 2', sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #222629;
+	color: white;
+	text-align: center;
+	margin: 50px auto;
+	box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.settings_box {
+	margin: 0 auto;
+	width: 500px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	/*align-items: center;*/
+	background-color: #33373B;
+	border-radius: 8px;
+	padding-bottom: 20px;
+	box-shadow: 0px 5px 10px #131617;
+}
+.settings_img img {
+	width: 100px;
+	padding: 20px 0;
+}
+.settings_header {
+	margin-bottom: 30px;
+	background-color: #222629;
+	margin-top: 0;
+	padding: 20px;
+	color: #86C232;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-top: 3px solid #61892F;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.settings_header span {
+	font-size: 25px;
+}
+.fa-user {
+	margin-right: 10px;
+}
+
+
+/*BUTTONS*/
+
+.toggle_buttons_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 20px;
+	margin: 0 auto;
+	/*width: 80%;*/
+}
+.choose_settings {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: inherit;
+}
+.change_photo,
+.change_pass {
+	margin: 10px auto;
+	width: 300px;
+	padding: 10px;
+	background-color: #222629;
+	border-radius: 4px;
+	box-shadow: 0px 2px 10px #2A2E31;
+	transition: .1s;
+}
+.change_photo:hover,
+.change_pass:hover {
+	background-color: #61892F;
+	cursor: pointer;
+}
+
+/* HIDDEN PHOTO CONTENT */
+
+.photo_requirements_set {
+	margin: 20px 0;
+	color: #565C65;
+	font-size: 13px;
+	text-align: left;
+	font-weight: bold;
+	font-style: italic;
+}
+ .avatar_upload_set {
+    width: 100%;
+    display: none;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .avatar_upload_set .avatar_edit_set input {
+     display: none;
+}
+.avatar_edit_set input + label {
+    padding: 10px;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	background-color: #474B4F;
+}
+.avatar_edit_set input + label:hover {
+     background-color: #54782A;
+     cursor: pointer;
+}
+.avatar_preview_set {
+	margin: 0 auto;
+     width: 200px;
+     height: 260px;
+     border-radius: 4px;
+     border-top: 3px solid #61892F;
+     background-color: #222629;
+     margin-bottom: 20px;
+}
+.avatar_preview_set > div {
+ 	 border-radius: 4px;
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+
+
+/*HIDDEN PASSWORD CONTENT*/
+
+.settings_form {
+	display: none;
+	flex-direction: column;
+	margin: 20px auto;
+}
+.settings_form input {
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 200px;
+	border: none;
+	background-color: #474B4F;
+	color: white;
+	font-size: 15px;
+	outline-style: none;
+	vertical-align: middle;
+	border-radius: 4px;
+	border-left: 3px solid #61892F;
+
+}
+.change_button {
+	margin-top: 20px;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	width: 123px;
+	height: 38px;
+	background-color: #61892F;
+	margin: 0 auto;
+}
+.change_button:hover {
+	background-color: #4F7027;
+	cursor: pointer;
+}
+.forgot_pass {
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+	margin-top: 10px;
+	cursor: pointer;
+	color: #61892F !important;
+}
+form .margin_b40px {
+	margin-bottom: 40px;
+}
+
+ 
+
+

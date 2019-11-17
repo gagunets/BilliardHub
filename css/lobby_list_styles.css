@@ -19,8 +19,9 @@ table {
 }
 .live-match-lobby-table {
 	display: inline-block;
-	max-width: 50%;
+	max-width: 100%;
 	margin-top: 40px;   /*  відступ зверху  */
+	width: 700px;
 }
 .live-match-lobby-info {
 	padding: 12px;
@@ -36,24 +37,28 @@ table {
 	display: table-row-group;
 }
 .live-match-lobby-player-table {
-	display: inline-block;
-	background-color: #474B4F;
-    border-bottom: 3px solid #61892F;
+	box-shadow: 0px 5px 10px #131617;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 254px;
+    /*max-height: 254px;
+    min-height: 254px;*/
     padding-top: 20px;
+    background-color: #474B4F;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.live-match-lobby-player01,
+.live-match-lobby-player02,
+.live-match-lobby-frame-section {
+	flex:1;
 }
 .live-match-lobby-player01,
 .live-match-lobby-player02 {
-	padding: 10px 40px;
-	float: left;
-	position: relative;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	box-sizing: border-box;	
-}
-.live-match-lobby-frame-section {
-	float: left;
-	position: relative;
-	display: block;
-	box-sizing: border-box;
 }
 .live-match-lobby-player01-name,
 .live-match-lobby-player02-name {
@@ -63,8 +68,11 @@ table {
 }
 .live-match-lobby-player01-img,
 .live-match-lobby-player02-img {
-	max-width: 100px;
+	width: 120px;
+	max-width: 120px;
 	height: auto;
+	max-height: 170px;
+	border-radius: 4px;
 }
 .live-match-lobby-frame-section tr th {
 	font-size: 11px;
@@ -81,12 +89,16 @@ table {
 	font-weight: 500;
 	color: #fff;
 	text-align: center;
-	padding: 5px 10px;
+	padding: 0px;
+	width: 60px;
+	max-width: 60px;
+	min-width: 60px;
 	vertical-align: middle;
 }
 .live-match-lobby-frame-section {
-	padding: 0px 20px;
-	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
 }
 .live-match-lobby-frame-section table tr.live-match-lobby-frame-details td {
 	font-size: 10px;
@@ -99,3 +111,32 @@ table {
 	vertical-align: middle;
 	border-top: solid 1px #222629;
 }
+
+
+/*MOBILE RESPONSIVE*/
+
+@media screen and (max-width: 600px) {
+	.live-match-lobby-table  {
+		width: 100%;
+    	overflow: auto;
+	}
+	.live-match-lobby-player-table {
+		width: 100%;
+		overflow: auto;
+	}
+	.live-match-lobby-player01-img,
+	.live-match-lobby-player02-img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+

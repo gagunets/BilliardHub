@@ -1,22 +1,52 @@
+body {
+	font-family: 'Exo 2', sans-serif;
+	padding: 0;
+	margin: 0;
+    background: url(/Users/MacBook/Desktop/snooker_back03.png);
+	color: white;
+	text-align: center;
+	margin: 50px auto;
+	width: 100%
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+	margin: 0px;
+	padding: 0px;
+    text-decoration: none;
+    color: #fff;
+}
 .matches_list_table_round_num {
 	text-transform: uppercase;
 	font-size: 22px;
 	text-align: left;
 }
 .round_num_div {
-	width: 1067px;
-	max-width: 1067px;
+	width: 100%;
+
 }
-table col[class*="col-"] {
-	position: static;
+/*table col[class*="col-"] {
+	position: absolute;
 	float: none;
 	display: table-column;
+}*/
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.matches_list_table{
+.sub-container {
+	margin-bottom: 100px;
+	width: 1080px;
+}
+.matches_list_table {
 	margin-bottom: 50px;
-	width: 1067px;
-	max-width: 1067px;
-	min-width: 1067px;
+	width: 100%;
 }
 table.matches_list_table .col-1 {
  	width: 5%;
@@ -37,10 +67,9 @@ table.matches_list_table .col-6 {
  	width: 5%;
 }
 .matches_list_table_score {
-	text-align: center;
-}
-.matches_list_table_score_row {
-	display: inline-block;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 20px;
 }
 .matches_list_table thead th {
 	text-transform: uppercase;
@@ -65,7 +94,6 @@ table.matches_list_table .col-6 {
 	font-weight: 700;
 }
 .matches_list_table_best_of {
-	padding: 2px 10px;
 	font-weight: normal;
 	font-size: 14px;
 }
@@ -108,6 +136,10 @@ table.matches_list_table .col-6 {
 .matches_list_table_borRad_div {
 	border-top: 3px solid #61892F;
 	border-radius: 8px;
+	width: 100%;
+}
+.matches_list_table_borRad_div table {
+	border-collapse: collapse;
 }
 .matches_list_table_borRad-bl {
 	border-bottom-left-radius: 8px;
@@ -119,11 +151,60 @@ table.matches_list_table .col-6 {
 	color: #FB3B00;
 	animation: blink 2s linear infinite;
 }
-@keyframes blink {
+/*@keyframes blink {
   50% {
     opacity: 0;
   }
 }
+*/
+
+@media screen and (max-width: 1000px) {
+	.matches_list_table_borRad_div {
+		overflow: hidden;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		
+	}
+	.matches_list_table_borRad_div table {
+		width: 100%;
+		border-collapse: collapse;
+		flex-wrap: wrap;
+	}
+	body {
+		width: 100%;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	h1 {
+		text-align: left;
+		padding: 0 30px;
+		font-size: 25px;
+	}
+	.matches_list_table_round_num {
+		font-size: 20px;  
+	}
+	.sub-container {
+		padding-left: 30px;
+		width: 100%;
+		flex-wrap: wrap;
+		display: flex;
+		align-items: flex-start;
+		overflow-x: hidden;
+	}
+
+
+
+
+
+
+
+
+
+
 
 
 

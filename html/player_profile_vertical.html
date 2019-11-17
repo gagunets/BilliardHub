@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player lobby vertical</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/~levko/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/navMenu.css">
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/styles.css"> 
+    <link rel="stylesheet" type="text/css" href="/Users/MacBook/Desktop/GitHub/BilliardHub/css/player_profile_vertical.css"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/~levko/img/balls01.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+	
+	<script type="text/javascript" src="/~levko/js/functions.js">
+	</script>
+</head>
+
+
+<body>
+	<header>
+	 	<!-- LOGO --> 
+	 	<div class="logo_box">
+        <img class="logo_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/sl_logo.png" alt="SnookerLviv">
+        <span class="logo_text">billiard hub</span>
+        </div>
+                
+				
+		<!-- NAV MENU -->
+		 <nav class="navigation" id="myTopnav">
+
+				<a href="/~levko/admin/tournaments">Турніри</a>
+				<a class="active" href="/~levko/admin/players">Гравці</a>
+				<a href="/~levko/admin/clubs">Клуби</a>
+				<a href="/~levko/admin/leagues">Ліги</a>
+				<a href="/~levko/admin/rankings">Рейтинг</a>
+				<a href="/~levko/admin/matches">Матчі</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   				 <i class="fa fa-bars"></i>
+ 				 </a>
+
+		</nav>
+				
+		<!-- BUTTONS -->
+		<div class="header_buttons">
+		<form action="/~levko/logout.php" class="login" method="post">
+			<i class="fas fa-sign-out-alt"></i>
+			<input id="childOne" type="submit" value="Вийти">
+		</form>
+		<form action="/~levko/playerHome.php" class="login" method="post">
+			<i class="fas fa-home"></i>
+			<input type="submit" value="Дім">
+		</form>
+		</div>
+
+     </header>
+   	<div class="profile_container">
+
+
+
+	<section>
+		
+		<div class="player_profile_section_ver">
+			<div class="player_profile_playerName">
+							<i class="fas fa-user"></i>
+							<div class="player_profile_header">Alan <span class="player_profile_surname"> Trigg</span>
+							</div>
+						</div>
+			<div class="player_profile_photo">
+					<img class="player_profile_img" src="/Users/MacBook/Desktop/GitHub/BilliardHub/img/dan.jpg" alt="Фото гравця">
+			</div>
+			<div class="player_profile_personalInfo">
+				<table>
+					<tr>
+						<td>
+							<div class="player_profile_country">
+								<div class="player_profile_tableHeader">країна</div>
+								<div class="player_profile_tabelMean">Україна</div>
+							</div>
+						</td>
+						<td>
+							<div class="player_profile_city">
+								<div class="player_profile_tableHeader">місто</div>
+								<div class="player_profile_tabelMean">Львів</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="player_profile_age">
+								<div class="player_profile_tableHeader">дата народження</div>
+								<div class="player_profile_tabelMean">1970-01-01</div>
+							</div>
+						</td>
+						<td>
+							<div class="player_profile_maxBreak">
+								<div class="player_profile_tableHeader">найвищий турнірний брейк</div>
+								<div class="player_profile_tabelMean max_break">177</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div> <br>
+
+			<!-- SECTION 02 (CIRCLES) -->
+
+		<div class="player_profile_section02">
+
+			<div id="anchor" class="player_profile_circle tablinks" onclick="openTab(event, 'tour')">
+				<div class="little_circle">2</div>
+				<i class="fas fa-trophy"></i><br>
+				<span class="circle_text">турніри</span>
+			</div>
+
+
+			<div id="anchor" class="player_profile_circle tablinks" onclick="openTab(event, 'tour_br')">
+				<div class="little_circle">9</div>
+				<i class="fas fa-trophy"></i> <br>
+				<span class="circle_text">брейки</span>
+			</div>
+
+
+			<div id="anchor" class="player_profile_circle tablinks" onclick="openTab(event, 'spar')">
+				<div class="little_circle">x</div>
+				<i class="fas fa-user-friends"></i><br>
+				<span class="circle_text">спаринги</span>
+			</div>
+
+
+			<div id="anchor" class="player_profile_circle tablinks" onclick="openTab(event, 'spar_br')">
+				<div class="little_circle">x</div>
+				<i class="fas fa-user-friends"></i> <br>
+				<span class="circle_text">брейки</span>
+			</div>
+
+		</div>
+	</section>
+	</div>
+	
+	<!-- TAB's CONTENT -->
+
+	<div class="tabcontent_box">
+		<div id="tour" class="tabcontent">
+			<span class="tour">tour</span>
+		</div>
+		
+		<div id="tour_br" class="tabcontent">
+			<span class="tour">tour_br</span>
+		</div>
+
+		<div id="spar" class="tabcontent">
+			<span class="tour">spar</span>
+		</div>
+
+		<div id="spar_br" class="tabcontent">
+			<span class="tour">spar_br</span>
+		</div>
+	</div>
+
+
+	<script>
+		function openTab(evt, tabName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(tabName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
+
